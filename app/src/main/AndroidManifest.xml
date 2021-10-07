@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
+            android:name=".FormulaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
