@@ -11,7 +11,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="75dp"
         android:layout_marginEnd="25dp"
         android:text="Cadastro"
         android:textAlignment="center"
@@ -28,8 +28,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:hint="Nome"
         android:inputType="textPersonName"
-        android:text="Nome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroTela" />
@@ -42,8 +42,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:hint="Usuario"
         android:inputType="textPersonName"
-        android:text="Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroNome" />
@@ -56,8 +56,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:hint="Senha"
         android:inputType="textPersonName"
-        android:text="Senha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroUsuario" />
@@ -70,8 +70,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:hint="E-mail"
         android:inputType="textPersonName"
-        android:text="E-mail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroSenha" />
@@ -84,8 +84,8 @@
         android:layout_marginTop="25dp"
         android:layout_marginEnd="25dp"
         android:ems="10"
+        android:hint="Instituicao"
         android:inputType="textPersonName"
-        android:text="Instituicao"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroEmail" />
@@ -148,6 +148,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#2196F3"
             app:srcCompat="@android:drawable/ic_input_add" />
 
         <ImageButton
@@ -155,6 +156,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#2196F3"
             app:srcCompat="@android:drawable/ic_menu_edit" />
 
         <ImageButton
@@ -162,6 +164,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="#2196F3"
             app:srcCompat="@android:drawable/ic_delete" />
 
     </LinearLayout>
