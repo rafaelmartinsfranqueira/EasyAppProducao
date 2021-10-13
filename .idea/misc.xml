@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Milena Zocca/AndroidStudioProjects/EasyAppProducao/app/src/main/res/layout/activity_formula.xml" value="0.19114583333333332" />
-        <entry key="..\:/Users/Milena Zocca/AndroidStudioProjects/EasyAppProducao/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/Milena Zocca/AndroidStudioProjects/EasyAppProducao/app/src/main/res/layout/activity_menu.xml" value="0.20520833333333333" />
-        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.27309782608695654" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_cadastro.xml" value="0.34375" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_formula.xml" value="0.2015625" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.31068840579710144" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_menu.xml" value="0.35144927536231885" />
       </map>
     </option>
   </component>
