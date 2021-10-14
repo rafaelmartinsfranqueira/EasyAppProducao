@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="materias_array">
+        <item>Arquitetura WEB</item>
+        <item>Desenvolvimento Mobile</item>
+        <item>Fabrica de Projetos</item>
+        <item>Gestão de Projetos</item>
+        <item>Segurança de Sistemas</item>
+    </string-array>
+</resources>

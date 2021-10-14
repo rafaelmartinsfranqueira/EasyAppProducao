@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Cadastro de Formula"
+        android:text="@string/formula"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,12 +22,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView">
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeFormula">
 
         <EditText
             android:id="@+id/textNomeNota1"
@@ -37,8 +37,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 1"
             android:inputType="textPersonName"
-            android:text="AC1" />
+            android:text="@string/nomenota1" />
 
         <EditText
             android:id="@+id/textPesoNota1"
@@ -49,7 +50,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="0.1"
-            android:inputType="numberSigned" />
+            android:inputType="numberSigned"
+            android:text="@string/pesonota1" />
 
     </LinearLayout>
 
@@ -73,8 +75,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 2"
             android:inputType="textPersonName"
-            android:text="AC2" />
+            android:text="@string/nomenota2" />
 
         <EditText
             android:id="@+id/textPesoNota2"
@@ -85,7 +88,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="0.3"
-            android:inputType="numberSigned" />
+            android:inputType="numberSigned"
+            android:text="@string/pesonota2" />
     </LinearLayout>
 
     <LinearLayout
@@ -108,8 +112,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 3"
             android:inputType="textPersonName"
-            android:text="AG" />
+            android:text="@string/nomenota3" />
 
         <EditText
             android:id="@+id/textPesoNota3"
@@ -120,7 +125,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="0.2"
-            android:inputType="numberSigned" />
+            android:inputType="numberSigned"
+            android:text="@string/pesonota3" />
 
     </LinearLayout>
 
@@ -144,8 +150,9 @@
             android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 4"
             android:inputType="textPersonName"
-            android:text="AF" />
+            android:text="@string/nomenota4" />
 
         <EditText
             android:id="@+id/textPesoNota4"
@@ -156,7 +163,8 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="0.4"
-            android:inputType="numberSigned" />
+            android:inputType="numberSigned"
+            android:text="@string/pesonota4" />
     </LinearLayout>
 
     <LinearLayout
@@ -177,12 +185,25 @@
             android:text="Salvar" />
 
         <Button
-            android:id="@+id/buttonCancelar"
+            android:id="@+id/buttonVoltar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="buttonVoltarClick"
+            android:text="Voltar" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/editTextNomeFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nome Formula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

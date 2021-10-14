@@ -19,4 +19,9 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this,FormulaActivity.class);
         startActivity(intent);
     }
+
+    public void buttonNotasClick(View view) {
+        Intent intent = new Intent(this, NotasActivity.class);
+        startActivity(intent);
+    }
 }

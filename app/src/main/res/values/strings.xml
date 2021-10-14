@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">EasyApp</string>
+    <string name="formula">Cadastro de Formula</string>
+    <string name="nomenota1">AC1</string>
+    <string name="nomenota2">AC2</string>
+    <string name="nomenota3">AG</string>
+    <string name="nomenota4">AF</string>
+    <string name="pesonota1">0.1</string>
+    <string name="pesonota2">0.3</string>
+    <string name="pesonota3">0.2</string>
+    <string name="pesonota4">0.4</string>
+    <string name="notas">Inclusão de Notas</string>
 </resources>
