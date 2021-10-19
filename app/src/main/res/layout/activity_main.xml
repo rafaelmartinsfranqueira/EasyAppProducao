@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@mipmap/Logo" />
+        tools:srcCompat="@mipmap/logo" />
 
     <EditText
         android:id="@+id/txtNome"
@@ -28,6 +28,7 @@
         android:ems="10"
         android:hint="Usuario"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
@@ -42,6 +43,7 @@
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNome" />
@@ -54,6 +56,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="#2196F3"
+        android:onClick="buttonHomeClick"
         android:text="Entrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,6 +70,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="25dp"
         android:backgroundTint="#2196F3"
+        android:onClick="buttonHCadastroClick"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

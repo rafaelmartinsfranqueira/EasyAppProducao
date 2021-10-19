@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="formulas_array">
+        <item>Formula WEB</item>
+        <item>Formula Mobile</item>
+        <item>Formula Fabrica de Projetos</item>
+        <item>Formula Gestão de Projetos</item>
+        <item>Formula Segurança de Sistemas</item>
+    </string-array>
+</resources>
