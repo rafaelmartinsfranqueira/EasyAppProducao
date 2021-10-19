@@ -39,7 +39,8 @@
             android:ems="10"
             android:hint="Nome Nota 1"
             android:inputType="textPersonName"
-            android:text="@string/nomenota1" />
+            android:text="@string/nomenota1"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/textPesoNota1"
@@ -51,7 +52,8 @@
             android:ems="10"
             android:hint="0.1"
             android:inputType="numberSigned"
-            android:text="@string/pesonota1" />
+            android:text="@string/pesonota1"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -77,7 +79,8 @@
             android:ems="10"
             android:hint="Nome Nota 2"
             android:inputType="textPersonName"
-            android:text="@string/nomenota2" />
+            android:text="@string/nomenota2"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/textPesoNota2"
@@ -89,7 +92,8 @@
             android:ems="10"
             android:hint="0.3"
             android:inputType="numberSigned"
-            android:text="@string/pesonota2" />
+            android:text="@string/pesonota2"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
@@ -114,7 +118,8 @@
             android:ems="10"
             android:hint="Nome Nota 3"
             android:inputType="textPersonName"
-            android:text="@string/nomenota3" />
+            android:text="@string/nomenota3"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/textPesoNota3"
@@ -126,7 +131,8 @@
             android:ems="10"
             android:hint="0.2"
             android:inputType="numberSigned"
-            android:text="@string/pesonota3" />
+            android:text="@string/pesonota3"
+            android:textAlignment="center" />
 
     </LinearLayout>
 
@@ -152,7 +158,8 @@
             android:ems="10"
             android:hint="Nome Nota 4"
             android:inputType="textPersonName"
-            android:text="@string/nomenota4" />
+            android:text="@string/nomenota4"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/textPesoNota4"
@@ -164,7 +171,8 @@
             android:ems="10"
             android:hint="0.4"
             android:inputType="numberSigned"
-            android:text="@string/pesonota4" />
+            android:text="@string/pesonota4"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <LinearLayout
