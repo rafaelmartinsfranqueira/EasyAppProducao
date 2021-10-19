@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
+            android:name=".MateriasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
             android:name=".CadastroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotasActivity"
             android:exported="true" />
         <activity
             android:name=".FormulaActivity"
