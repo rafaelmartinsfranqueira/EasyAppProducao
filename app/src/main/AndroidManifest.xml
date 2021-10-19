@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
+            android:name=".PerfilActivity"
+            android:exported="true" />
+        <activity
             android:name=".MateriasActivity"
             android:exported="true" />
         <activity

@@ -33,4 +33,8 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MateriasActivity.class);
         startActivity(intent);
     }
+    public void buttonProfileClick(View view) {
+        Intent intent = new Intent(this, PerfilActivity.class);
+        startActivity(intent);
+    }
 }
