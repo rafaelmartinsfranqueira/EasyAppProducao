@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
-            android:name=".activity_padrao"
+            android:name=".PadraoActivity"
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
