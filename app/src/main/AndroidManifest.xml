@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
+            android:name=".activity_padrao"
+            android:exported="false" />
+        <activity
             android:name=".PerfilActivity"
             android:exported="true" />
         <activity
@@ -20,7 +23,9 @@
             android:exported="true" />
         <activity
             android:name=".CadastroActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Cadastro"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NotasActivity"
             android:exported="true" />
