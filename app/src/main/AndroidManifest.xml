@@ -14,13 +14,19 @@
             android:exported="false" />
         <activity
             android:name=".PerfilActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Perfil"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".MateriasActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Materias"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".DashboardActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Dashboard"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".CadastroActivity"
             android:exported="true"
@@ -28,10 +34,14 @@
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".NotasActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Notas"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".FormulaActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Formula"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".MenuActivity"
             android:exported="true" />

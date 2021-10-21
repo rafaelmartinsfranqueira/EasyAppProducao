@@ -12,9 +12,6 @@ public class FormulaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formula);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        }
     }
-
-    public void buttonVoltarClick(View view) {
-        finish();
-    }
-}
