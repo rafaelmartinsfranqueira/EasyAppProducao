@@ -7,79 +7,100 @@
     tools:context=".MenuActivity">
 
     <Button
-        android:id="@+id/buttonMaterias"
+        android:id="@+id/btnMenuMaterias"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="buttonMateriasClick"
         android:text="Materias"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuFormulas" />
 
     <Button
-        android:id="@+id/buttonNotas"
-        android:layout_width="match_parent"
+        android:id="@+id/btnMenuNotas"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="buttonNotasClick"
         android:text="Notas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMaterias" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuMaterias" />
 
     <Button
-        android:id="@+id/buttonFormulas"
-        android:layout_width="match_parent"
+        android:id="@+id/btnMenuFormulas"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="buttonFormulaClick"
         android:text="Formulas"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNotas" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMenuUsuario" />
 
     <Button
-        android:id="@+id/buttonDashboard"
-        android:layout_width="match_parent"
+        android:id="@+id/btnMenuDesempenho"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="buttonDashboardClick"
         android:text="Desempenho"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFormulas" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuNotas" />
 
     <Button
-        android:id="@+id/buttonCadastro"
-        android:layout_width="match_parent"
+        android:id="@+id/btnMenuCadastro"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
         android:onClick="buttonProfileClick"
-        android:text="Meu Cadastro"
+        android:text="Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDashboard" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuDesempenho" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="305dp"
-        android:layout_height="162dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="72dp"
+        android:id="@+id/imgMenuUsuario"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMenuCabecalho"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/txtMenuCabecalho"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_200"
+        android:text="Menu"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

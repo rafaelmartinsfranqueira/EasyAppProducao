@@ -9,15 +9,15 @@
     <ImageView
         android:id="@+id/imgLoginLogo"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLoginTela"
-        app:srcCompat="@drawable/easyapp" />
+        app:layout_constraintTop_toBottomOf="@+id/txtLoginCabecalho"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/txtLoginNome"
@@ -30,6 +30,7 @@
         android:hint="Usuario"
         android:inputType="textPersonName"
         android:minHeight="48dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLoginLogo" />
@@ -45,6 +46,7 @@
         android:hint="Senha"
         android:inputType="textPassword"
         android:minHeight="48dp"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLoginNome" />
@@ -78,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnLoginEntrar" />
 
     <TextView
-        android:id="@+id/txtLoginTela"
+        android:id="@+id/txtLoginCabecalho"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"

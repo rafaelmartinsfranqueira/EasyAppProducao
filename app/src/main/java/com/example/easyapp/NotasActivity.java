@@ -15,7 +15,7 @@ public class NotasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notas);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinnerMaterias);
+        Spinner spinner = (Spinner) findViewById(R.id.spinnerNotasMaterias);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                                     R.array.materias_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

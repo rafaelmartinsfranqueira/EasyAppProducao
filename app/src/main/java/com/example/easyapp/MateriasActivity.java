@@ -13,7 +13,7 @@ public class MateriasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_materias);
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinnerMateriaSelect);
+        Spinner spinner = (Spinner) findViewById(R.id.spinnerMateriaFormula);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.formulas_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

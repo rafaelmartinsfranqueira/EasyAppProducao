@@ -7,87 +7,121 @@
     tools:context=".PerfilActivity">
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtPerfilCabecalho"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:text="Perfil do Usuário"
+        android:layout_marginEnd="10dp"
+        android:background="@color/teal_200"
+        android:text="Cadastro"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <EditText
+        android:id="@+id/txtPerfilNome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="142dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="142dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:srcCompat="@android:mipmap/sym_def_app_icon" />
-
-    <EditText
-        android:id="@+id/txtCadastroSenhaProfile"
-        android:layout_width="354dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:hint="Senha"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCadastroEmailProfile" />
-
-    <ImageButton
-        android:id="@+id/btnCadastroEditarProfile"
-        android:layout_width="354dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="101dp"
-        android:layout_weight="1"
-        android:backgroundTint="#2196F3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCadastroSenhaProfile"
-        app:srcCompat="@android:drawable/ic_menu_edit"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/txtCadastroEmailProfile"
-        android:layout_width="354dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:hint="E-mail"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCadastroNomeProfile" />
-
-    <EditText
-        android:id="@+id/txtCadastroNomeProfile"
-        android:layout_width="354dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
         android:hint="Nome"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgPerfilUsuario" />
+
+    <EditText
+        android:id="@+id/txtPerfilUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilNome" />
+
+    <EditText
+        android:id="@+id/txtPerfilSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilUsuario" />
+
+    <EditText
+        android:id="@+id/txtPerfilEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilSenha" />
+
+    <EditText
+        android:id="@+id/txtPerfilInstituicao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:hint="Instituicao"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilEmail" />
+
+    <Button
+        android:id="@+id/btnPerfilEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Editar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilInstituicao" />
+
+    <ImageView
+        android:id="@+id/imgPerfilUsuario"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPerfilCabecalho"
+        tools:srcCompat="@drawable/usuario" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

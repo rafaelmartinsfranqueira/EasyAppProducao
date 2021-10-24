@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="notas_array">
+    <string name="nomenota1">AC1</string>
+    <string name="nomenota2">AC2</string>
+    <string name="nomenota3">AF</string>
+    <string name="nomenota4">AG</string>
+    <string name="pesonota1">0.15</string>
+    <string name="pesonota2">0.30</string>
+    <string name="pesonota3">0.1</string>
+    <string name="pesonota4">0.45</string>
+</resources>
