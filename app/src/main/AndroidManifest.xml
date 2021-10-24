@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasyApp">
         <activity
-            android:name=".PadraoActivity"
-            android:exported="false" />
-        <activity
             android:name=".PerfilActivity"
             android:exported="true"
             android:label="Perfil"
