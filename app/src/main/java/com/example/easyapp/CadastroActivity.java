@@ -2,7 +2,9 @@ package com.example.easyapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class CadastroActivity extends AppCompatActivity {
 
@@ -11,5 +13,10 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         getSupportActionBar().setHomeButtonEnabled(true);
+    }
+
+    public void btnSalvarClick(View view) {
+        Intent intent = new Intent(this,MenuActivity.class);
+        startActivity(intent);
     }
 }

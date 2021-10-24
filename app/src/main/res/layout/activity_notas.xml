@@ -6,22 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".NotasActivity">
 
-    <TextView
-        android:id="@+id/txtNotasCabecalho"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:background="@color/teal_200"
-        android:text="Notas"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Spinner
         android:id="@+id/spinnerNotasMaterias"
         android:layout_width="0dp"
@@ -32,7 +16,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNotasCabecalho" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/lnlNotas1"
@@ -54,8 +38,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 1"
             android:inputType="textPersonName"
-            android:text="Nota 1"
             android:textAlignment="center" />
 
         <EditText
@@ -65,7 +49,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nota 1"
+            android:hint="Valor Nota 1"
             android:inputType="numberSigned"
             android:textAlignment="center" />
 
@@ -91,8 +75,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 2"
             android:inputType="textPersonName"
-            android:text="Nota 2"
             android:textAlignment="center" />
 
         <EditText
@@ -102,7 +86,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nota 2"
+            android:hint="Valor Nota 2"
             android:inputType="numberSigned"
             android:textAlignment="center" />
 
@@ -128,8 +112,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 3"
             android:inputType="textPersonName"
-            android:text="Nota 3"
             android:textAlignment="center" />
 
         <EditText
@@ -139,7 +123,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nota 3"
+            android:hint="Valor Nota 3"
             android:inputType="numberSigned"
             android:textAlignment="center" />
 
@@ -165,8 +149,8 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
+            android:hint="Nome Nota 4"
             android:inputType="textPersonName"
-            android:text="Nota 4"
             android:textAlignment="center" />
 
         <EditText
@@ -176,7 +160,7 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Nota 4"
+            android:hint="Valor Nota 4"
             android:inputType="numberSigned"
             android:textAlignment="center" />
 
@@ -200,8 +184,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Media"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/txtNotasMediaCalculada"
@@ -209,8 +192,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:hint="Media Calculada"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAlignment="center" />
     </LinearLayout>
 
     <Button
