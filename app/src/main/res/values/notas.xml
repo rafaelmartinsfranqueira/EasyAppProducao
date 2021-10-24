@@ -1,5 +1,4 @@
 <resources>
-    <string-array name="notas_array">
     <string name="nomenota1">AC-1</string>
     <string name="nomenota2">AC-2</string>
     <string name="nomenota3">AF</string>
@@ -8,5 +7,4 @@
     <string name="pesonota2">0.2</string>
     <string name="pesonota3">0.3</string>
     <string name="pesonota4">0.4</string>
-</string-array>
 </resources>
