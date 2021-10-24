@@ -98,7 +98,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroEmail" />
 
     <Switch
-        android:id="@+id/switchTermoDeUso"
+        android:id="@+id/switchCadastroTermoDeUso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -116,20 +116,20 @@
         android:text="Termos de Uso"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/switchTermoDeUso"
+        app:layout_constraintStart_toEndOf="@+id/switchCadastroTermoDeUso"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroInstituicao" />
 
     <Switch
-        android:id="@+id/switchTermoDePrivacidade"
+        android:id="@+id/switchCadastroTermoDePrivacidade"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchTermoDeUso" />
+        app:layout_constraintTop_toBottomOf="@+id/switchCadastroTermoDeUso" />
 
     <TextView
-        android:id="@+id/txtTermosDePrivacidade"
+        android:id="@+id/txtCadastroTermosDePrivacidade"
         android:layout_width="0dp"
         android:layout_height="25dp"
         android:layout_marginStart="10dp"
@@ -138,7 +138,7 @@
         android:text="Termos de Privacidade"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/switchTermoDePrivacidade"
+        app:layout_constraintStart_toEndOf="@+id/switchCadastroTermoDePrivacidade"
         app:layout_constraintTop_toBottomOf="@+id/txtCadastroTermosDeUso" />
 
     <Button
@@ -152,10 +152,10 @@
         android:text="Salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switchTermoDePrivacidade" />
+        app:layout_constraintTop_toBottomOf="@+id/switchCadastroTermoDePrivacidade" />
 
     <ImageView
-        android:id="@+id/imgPerfilUsuario"
+        android:id="@+id/imgCadastroUsuario"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginStart="10dp"
