@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_cadastro.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_dashboard.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_formula.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_login.xml" value="0.33106884057971014" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_main.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_materias.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_menu.xml" value="0.3383152173913043" />
@@ -13,6 +16,8 @@
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_padrao.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_perfil.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/materia_item_dashboard.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
       </map>
     </option>
   </component>

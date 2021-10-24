@@ -31,7 +31,7 @@
             android:name=".CadastroActivity"
             android:exported="true"
             android:label="Cadastro"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".LoginActivity"/>
         <activity
             android:name=".NotasActivity"
             android:exported="true"
@@ -46,7 +46,7 @@
             android:name=".MenuActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
