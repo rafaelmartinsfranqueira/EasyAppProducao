@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lnlDashboard5"
+        app:layout_constraintTop_toBottomOf="@+id/lnlDashboard4"
         tools:itemCount="5"
         tools:listitem="@layout/item_lista_materia">
 
@@ -57,13 +57,13 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/txtDashboardObjetivo1"
+            android:id="@+id/txtDashboardMeta1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Objetivo 1"
+            android:hint="Meta 1"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
@@ -105,13 +105,13 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/txtDashboardObjetivo2"
+            android:id="@+id/txtDashboardMeta2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Objetivo 2"
+            android:hint="Meta 2"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
@@ -153,13 +153,13 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/txtDashboardObjetivo3"
+            android:id="@+id/txtDashboardMeta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Objetivo 3"
+            android:hint="Meta 3"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
@@ -201,63 +201,16 @@
             android:textAlignment="center" />
 
         <EditText
-            android:id="@+id/txtDashboardObjetivo4"
+            android:id="@+id/txtDashboardMeta4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Objetivo 4"
+            android:hint="Meta 4"
             android:inputType="numberDecimal"
             android:textAlignment="center" />
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/lnlDashboard5"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lnlDashboard4">
-
-        <EditText
-            android:id="@+id/txtDashboardMateria5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Materia 5"
-            android:inputType="textPersonName"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/txtDashboardMedia5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Media 5"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-
-        <EditText
-            android:id="@+id/txtDashboardObjetivo5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Objetivo 5"
-            android:inputType="numberDecimal"
-            android:textAlignment="center" />
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
