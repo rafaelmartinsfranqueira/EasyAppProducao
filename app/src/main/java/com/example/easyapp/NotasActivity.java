@@ -17,7 +17,7 @@ public class NotasActivity extends AppCompatActivity {
 
         Spinner spinner = (Spinner) findViewById(R.id.spinnerNotasMaterias);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                                    R.array.materias_array, android.R.layout.simple_spinner_item);
+        R.array.materias_array, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         getSupportActionBar().setHomeButtonEnabled(true);
