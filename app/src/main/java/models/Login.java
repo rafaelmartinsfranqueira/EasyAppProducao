@@ -6,39 +6,40 @@ import java.util.ArrayList;
 
 public class Login {
 
-    private String Nome;
-    private String Senha;
-    private int Id;
-
-    public int getId() {
-        return Id;
-    }
-
-    public void setId(int id) {
-        Id = id;
-    }
+    private String nome;
 
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String senha) {
-        Senha = senha;
+        this.senha = senha;
     }
+
+    public int getUsuarioid() {
+        return usuarioid;
+    }
+
+    public void setUsuarioid(int usuarioid) {
+        this.usuarioid = usuarioid;
+    }
+
+    private String senha;
+    private int usuarioid;
 
     public static String parseJson(Login login) {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("Nome", login.getNome());
-            jsonObject.put("Senha", login.getSenha());
+            jsonObject.put("nome", login.getNome());
+            jsonObject.put("senha", login.getSenha());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -52,9 +53,9 @@ public class Login {
             for (int i = 0; i < array.length(); i++) {
                 Login login = new Login();
                 JSONObject obj = array.getJSONObject(i);
-                login.setNome(obj.getString("Nome"));
-                login.setSenha(obj.getString("Senha"));
-                login.setId(obj.getInt("id"));
+                login.setNome(obj.getString("nome"));
+                login.setSenha(obj.getString("senha"));
+                login.setUsuarioid(obj.getInt("usuarioid"));
                 logins.add(login);
             }
             return logins;
@@ -67,9 +68,9 @@ public class Login {
         try {
             Login login = new Login();
             JSONObject obj = new JSONObject(json);
-            login.setNome(obj.getString("Nome"));
-            login.setSenha(obj.getString("Senha"));
-            login.setId(obj.getInt("id"));
+            login.setNome(obj.getString("nome"));
+            login.setSenha(obj.getString("senha"));
+            login.setUsuarioid(obj.getInt("id"));
             return login;
         } catch (Exception ex) {
             return null;
@@ -79,9 +80,9 @@ public class Login {
     public Login() {
     }
 
-    public Login(int id, String nome, String senha) {
-        Id = id;
-        Nome = nome;
-        Senha = senha;
+    public Login(int usuarioid, String nome, String senha) {
+        usuarioid = usuarioid;
+        nome = nome;
+        senha = senha;
     }
 }

@@ -7,89 +7,89 @@ import java.util.ArrayList;
 
 public class Cadastro {
 
-    private String Nome;
-    private String Senha;
-    private String Usuario;
-    private String Email;
-    private String Instituicao;
-    private String TermoDeUso;
-    private String TermoDePrivacidade;
-    private int Id;
-
-    public String getUsuario() {
-        return Usuario;
-    }
-
-    public void setUsuario(String usuario) {
-        Usuario = usuario;
-    }
-
-    public String getEmail() {
-        return Email;
-    }
-
-    public void setEmail(String email) {
-        Email = email;
-    }
-
-    public String getInstituicao() {
-        return Instituicao;
-    }
-
-    public void setInstituicao(String instituicao) {
-        Instituicao = instituicao;
-    }
-
-    public String getTermoDeUso() {
-        return TermoDeUso;
-    }
-
-    public void setTermoDeUso(String termoDeUso) {
-        TermoDeUso = termoDeUso;
-    }
-
-    public String getTermoDePrivacidade() {
-        return TermoDePrivacidade;
-    }
-
-    public void setTermoDePrivacidade(String termoDePrivacidade) {
-        TermoDePrivacidade = termoDePrivacidade;
-    }
-
-    public int getId() {
-        return Id;
-    }
-
-    public void setId(int id) {
-        Id = id;
-    }
-
     public String getNome() {
-        return Nome;
+        return nome;
     }
 
     public void setNome(String nome) {
-        Nome = nome;
+        this.nome = nome;
     }
 
     public String getSenha() {
-        return Senha;
+        return senha;
     }
 
     public void setSenha(String senha) {
-        Senha = senha;
+        this.senha = senha;
     }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getInstituicao() {
+        return instituicao;
+    }
+
+    public void setInstituicao(String instituicao) {
+        this.instituicao = instituicao;
+    }
+
+    public String getTermosdeuso() {
+        return termosdeuso;
+    }
+
+    public void setTermosdeuso(String termosdeuso) {
+        this.termosdeuso = termosdeuso;
+    }
+
+    public String getTermosdeprivacidade() {
+        return termosdeprivacidade;
+    }
+
+    public void setTermosdeprivacidade(String termosdeprivacidade) {
+        this.termosdeprivacidade = termosdeprivacidade;
+    }
+
+    public int getUsuarioid() {
+        return usuarioid;
+    }
+
+    public void setUsuarioid(int usuarioid) {
+        this.usuarioid = usuarioid;
+    }
+
+    private String nome;
+    private String senha;
+    private String usuario;
+    private String email;
+    private String instituicao;
+    private String termosdeuso;
+    private String termosdeprivacidade;
+    private int usuarioid;
 
     public static String parseJson(Cadastro cadastro) {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("Nome", cadastro.getNome());
-            jsonObject.put("Senha", cadastro.getSenha());
-            jsonObject.put("Usuario", cadastro.getUsuario());
-            jsonObject.put("Email", cadastro.getEmail());
-            jsonObject.put("Instituicao", cadastro.getInstituicao());
-            jsonObject.put("TermoDeUso", cadastro.getTermoDeUso());
-            jsonObject.put("TermoDePrivacidade", cadastro.getTermoDePrivacidade());
+            jsonObject.put("nome", cadastro.getNome());
+            jsonObject.put("senha", cadastro.getSenha());
+            jsonObject.put("usuario", cadastro.getUsuario());
+            jsonObject.put("email", cadastro.getEmail());
+            jsonObject.put("instituicao", cadastro.getInstituicao());
+            jsonObject.put("termosdeuso", cadastro.getTermosdeuso());
+            jsonObject.put("termosdeprivacidade", cadastro.getTermosdeprivacidade());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -103,14 +103,14 @@ public class Cadastro {
             for (int i = 0; i < array.length(); i++) {
                 Cadastro cadastro = new Cadastro();
                 JSONObject obj = array.getJSONObject(i);
-                cadastro.setNome(obj.getString("Nome"));
-                cadastro.setSenha(obj.getString("Senha"));
-                cadastro.setUsuario(obj.getString("Usuario"));
-                cadastro.setEmail(obj.getString("Email"));
-                cadastro.setInstituicao(obj.getString("Instituicao"));
-                cadastro.setTermoDeUso(obj.getString("TermoDeUso"));
-                cadastro.setTermoDePrivacidade(obj.getString("TermoDePrivacidade"));
-                cadastro.setId(obj.getInt("id"));
+                cadastro.setNome(obj.getString("nome"));
+                cadastro.setSenha(obj.getString("senha"));
+                cadastro.setUsuario(obj.getString("usuario"));
+                cadastro.setEmail(obj.getString("email"));
+                cadastro.setInstituicao(obj.getString("instituicao"));
+                cadastro.setTermosdeuso(obj.getString("termosdeuso"));
+                cadastro.setTermosdeprivacidade(obj.getString("termosdeprivacidade"));
+                cadastro.setUsuarioid(obj.getInt("usuarioid"));
                 cadastros.add(cadastro);
             }
             return cadastros;
@@ -123,14 +123,14 @@ public class Cadastro {
         try {
             Cadastro cadastro = new Cadastro();
             JSONObject obj = new JSONObject(json);
-            cadastro.setNome(obj.getString("Nome"));
-            cadastro.setSenha(obj.getString("Senha"));
-            cadastro.setSenha(obj.getString("Email"));
-            cadastro.setSenha(obj.getString("Instituicao"));
-            cadastro.setSenha(obj.getString("Usuario"));
-            cadastro.setSenha(obj.getString("TermoDeUso"));
-            cadastro.setSenha(obj.getString("TermoDePrivacidade"));
-            cadastro.setId(obj.getInt("id"));
+            cadastro.setNome(obj.getString("nome"));
+            cadastro.setSenha(obj.getString("senha"));
+            cadastro.setSenha(obj.getString("usuario"));
+            cadastro.setSenha(obj.getString("email"));
+            cadastro.setSenha(obj.getString("instituicao"));
+            cadastro.setSenha(obj.getString("termosdeuso"));
+            cadastro.setSenha(obj.getString("termosdeprivacidade"));
+            cadastro.setUsuarioid(obj.getInt("usuarioid"));
             return cadastro;
         } catch (Exception ex) {
             return null;
@@ -140,14 +140,14 @@ public class Cadastro {
     public Cadastro() {
     }
 
-    public Cadastro(int id, String nome, String senha,String usuario,String email, String instituicao, String termodeuso,String termodeprivacidade) {
-        Id = id;
-        Nome = nome;
-        Senha = senha;
-        Email = email;
-        Instituicao = instituicao;
-        Usuario = usuario;
-        TermoDeUso = termodeuso;
-        TermoDePrivacidade = termodeprivacidade;
+    public Cadastro(int usuarioid, String nome, String senha,String usuario,String email, String instituicao, String termosdeuso,String termosdeprivacidade) {
+        usuarioid = usuarioid;
+        nome = nome;
+        senha = senha;
+        email = email;
+        instituicao = instituicao;
+        usuario = usuario;
+        termosdeuso = termosdeuso;
+        termosdeprivacidade = termosdeprivacidade;
     }
 }
