@@ -15,7 +15,7 @@
             android:label="Perfil"
             android:parentActivityName=".MenuActivity" />
         <activity
-            android:name=".MateriasActivity"
+            android:name=".MateriaActivity"
             android:exported="true"
             android:label="Materias"
             android:parentActivityName=".MenuActivity" />
@@ -30,7 +30,7 @@
             android:label="Cadastro"
             android:parentActivityName=".LoginActivity" />
         <activity
-            android:name=".NotasActivity"
+            android:name=".NotaActivity"
             android:exported="true"
             android:label="Notas"
             android:parentActivityName=".MenuActivity" />

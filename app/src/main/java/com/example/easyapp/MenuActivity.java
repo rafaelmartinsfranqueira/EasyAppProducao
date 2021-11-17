@@ -3,7 +3,6 @@ package com.example.easyapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -22,7 +21,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void buttonNotasClick(View view) {
-        Intent intent = new Intent(this, NotasActivity.class);
+        Intent intent = new Intent(this, NotaActivity.class);
         startActivity(intent);
     }
 
@@ -31,7 +30,7 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void buttonMateriasClick(View view) {
-        Intent intent = new Intent(this, MateriasActivity.class);
+        Intent intent = new Intent(this, MateriaActivity.class);
         startActivity(intent);
     }
     public void buttonProfileClick(View view) {

@@ -8,12 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class NotasActivity extends AppCompatActivity {
+public class NotaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notas);
+        setContentView(R.layout.activity_nota);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinnerNotasMaterias);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
