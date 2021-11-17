@@ -7,6 +7,8 @@ import java.util.ArrayList;
 public class Login {
 
     private String nome;
+    private String senha;
+    private int usuarioid;
 
     public String getNome() {
         return nome;
@@ -32,14 +34,12 @@ public class Login {
         this.usuarioid = usuarioid;
     }
 
-    private String senha;
-    private int usuarioid;
-
     public static String parseJson(Login login) {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("nome", login.getNome());
             jsonObject.put("senha", login.getSenha());
+            jsonObject.put("usuarioid", login.getUsuarioid());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";

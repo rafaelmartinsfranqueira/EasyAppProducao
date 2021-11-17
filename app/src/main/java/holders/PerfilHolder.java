@@ -16,11 +16,11 @@ public class PerfilHolder extends RecyclerView.ViewHolder {
 
     public PerfilHolder(View view) {
         super(view);
-        txtNome = (TextView) view.findViewById(R.id.txtCadastroNome);
-        txtSenha = (TextView) view.findViewById(R.id.txtCadastroSenha);
-        txtUsuario = (TextView) view.findViewById(R.id.txtCadastroUsuario);
-        txtEmail = (TextView) view.findViewById(R.id.txtCadastroEmail);
-        txtInstituicao = (TextView) view.findViewById(R.id.txtCadastroInstituicao);
+        txtNome = (TextView) view.findViewById(R.id.txtPerfilNome);
+        txtSenha = (TextView) view.findViewById(R.id.txtPerfilSenha);
+        txtUsuario = (TextView) view.findViewById(R.id.txtPerfilUsuario);
+        txtEmail = (TextView) view.findViewById(R.id.txtPerfilEmail);
+        txtInstituicao = (TextView) view.findViewById(R.id.txtPerfilInstituicao);
     }
 
 }

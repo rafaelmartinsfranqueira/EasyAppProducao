@@ -7,45 +7,42 @@ import java.util.ArrayList;
 
 public class Nota {
 
-    public String getNome() {
-        return nome;
+    public String getNotanome() {
+        return notanome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setNotanome(String notanome) {
+        this.notanome = notanome;
     }
 
-    public String getSenha() {
-        return senha;
+    public String getNotavalor() {
+        return notavalor;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setNotavalor(String notavalor) {
+        this.notavalor = notavalor;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public int getMateriaid() {
+        return materiaid;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setMateriaid(int materiaid) {
+        this.materiaid = materiaid;
     }
 
-    public String getEmail() {
-        return email;
+    public int getNotaid() {
+        return notaid;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setNotaid(int notaid) {
+        this.notaid = notaid;
     }
 
-    public String getInstituicao() {
-        return instituicao;
-    }
-
-    public void setInstituicao(String instituicao) {
-        this.instituicao = instituicao;
-    }
+    private String notanome;
+    private String notavalor;
+    private int materiaid;
+    private int notaid;
 
     public int getUsuarioid() {
         return usuarioid;
@@ -55,21 +52,16 @@ public class Nota {
         this.usuarioid = usuarioid;
     }
 
-    private String nome;
-    private String senha;
-    private String usuario;
-    private String email;
-    private String instituicao;
     private int usuarioid;
 
-    public static String parseJson(Nota perfil) {
+    public static String parseJson(Nota nota) {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("nome", perfil.getNome());
-            jsonObject.put("senha", perfil.getSenha());
-            jsonObject.put("usuario", perfil.getUsuario());
-            jsonObject.put("email", perfil.getEmail());
-            jsonObject.put("instituicao", perfil.getInstituicao());
+            jsonObject.put("notanome", nota.getNotanome());
+            jsonObject.put("notavalor", nota.getNotavalor());
+            jsonObject.put("materiaid", nota.getMateriaid());
+            jsonObject.put("notaid", nota.getNotaid());
+            jsonObject.put("usuarioid", nota.getUsuarioid());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -77,37 +69,35 @@ public class Nota {
     }
 
     public static ArrayList<Nota> parseObject(String json) {
-        ArrayList<Nota> perfis = new ArrayList<>();
+        ArrayList<Nota> notas = new ArrayList<>();
         try {
             JSONArray array = new JSONArray(json);
             for (int i = 0; i < array.length(); i++) {
-                Nota perfil = new Nota();
+                Nota nota = new Nota();
                 JSONObject obj = array.getJSONObject(i);
-                perfil.setNome(obj.getString("nome"));
-                perfil.setSenha(obj.getString("senha"));
-                perfil.setUsuario(obj.getString("usuario"));
-                perfil.setEmail(obj.getString("email"));
-                perfil.setInstituicao(obj.getString("instituicao"));
-                perfil.setUsuarioid(obj.getInt("usuarioid"));
-                perfis.add(perfil);
+                nota.setNotanome(obj.getString("notanome"));
+                nota.setNotavalor(obj.getString("notavalor"));
+                nota.setMateriaid(obj.getInt("materiaid"));
+                nota.setNotaid(obj.getInt("notaid"));
+                nota.setNotaid(obj.getInt("usuarioid"));
+                notas.add(nota);
             }
-            return perfis;
+            return notas;
         } catch (Exception ex) {
-            return perfis;
+            return notas;
         }
     }
 
     public static Nota parseOneObject(String json) {
         try {
-            Nota perfil = new Nota();
+            Nota nota = new Nota();
             JSONObject obj = new JSONObject(json);
-            perfil.setNome(obj.getString("nome"));
-            perfil.setSenha(obj.getString("senha"));
-            perfil.setSenha(obj.getString("usuario"));
-            perfil.setSenha(obj.getString("email"));
-            perfil.setSenha(obj.getString("instituicao"));
-            perfil.setUsuarioid(obj.getInt("usuarioid"));
-            return perfil;
+            nota.setNotanome(obj.getString("notanome"));
+            nota.setNotavalor(obj.getString("notavalor"));
+            nota.setMateriaid(obj.getInt("materiaid"));
+            nota.setNotaid(obj.getInt("notaid"));
+            nota.setNotaid(obj.getInt("usuarioid"));
+            return nota;
         } catch (Exception ex) {
             return null;
         }
@@ -116,12 +106,11 @@ public class Nota {
     public Nota() {
     }
 
-    public Nota(int usuarioid, String nome, String senha, String usuario, String email, String instituicao) {
+    public Nota(int notaid,int usuarioid, String notanome, String notavalor, int materiaid) {
+        notaid = notaid;
         usuarioid = usuarioid;
-        nome = nome;
-        senha = senha;
-        email = email;
-        instituicao = instituicao;
-        usuario = usuario;
+        notanome = notanome;
+        notavalor = notavalor;
+        materiaid = materiaid;
     }
 }

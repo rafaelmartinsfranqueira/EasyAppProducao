@@ -84,6 +84,7 @@ public class Cadastro {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("nome", cadastro.getNome());
+            jsonObject.put("usuarioid", cadastro.getUsuarioid());
             jsonObject.put("senha", cadastro.getSenha());
             jsonObject.put("usuario", cadastro.getUsuario());
             jsonObject.put("email", cadastro.getEmail());

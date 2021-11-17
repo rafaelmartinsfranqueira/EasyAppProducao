@@ -66,6 +66,7 @@ public class Perfil {
         JSONObject jsonObject = new JSONObject();
         try {
             jsonObject.put("nome", perfil.getNome());
+            jsonObject.put("usuarioid", perfil.getUsuarioid());
             jsonObject.put("senha", perfil.getSenha());
             jsonObject.put("usuario", perfil.getUsuario());
             jsonObject.put("email", perfil.getEmail());
