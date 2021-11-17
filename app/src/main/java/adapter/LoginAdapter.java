@@ -20,7 +20,7 @@ public class LoginAdapter extends RecyclerView.Adapter<LoginHolder> {
     @NonNull
     @Override
     public LoginHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    return null;
+        return null;
     }
 
     @Override

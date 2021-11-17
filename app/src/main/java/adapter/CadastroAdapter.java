@@ -20,7 +20,7 @@ public class CadastroAdapter extends RecyclerView.Adapter<CadastroHolder> {
     @NonNull
     @Override
     public CadastroHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-    return null;
+        return null;
     }
 
     @Override
