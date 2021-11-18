@@ -1,10 +1,10 @@
 <resources>
-    <string name="nomenota1">AC-1</string>
-    <string name="nomenota2">AC-2</string>
-    <string name="nomenota3">AF</string>
-    <string name="nomenota4">AG</string>
-    <string name="pesonota1">0.15</string>
-    <string name="pesonota2">0.30</string>
-    <string name="pesonota3">0.10</string>
-    <string name="pesonota4">0.45</string>
+    <string name="nomenota1">Nota-1</string>
+    <string name="nomenota2">Nota-2</string>
+    <string name="nomenota3">Nota-3</string>
+    <string name="nomenota4">Nota-4</string>
+    <string name="pesonota1">0.1</string>
+    <string name="pesonota2">0.2</string>
+    <string name="pesonota3">0.3</string>
+    <string name="pesonota4">0.4</string>
 </resources>
