@@ -7,9 +7,9 @@ import java.util.ArrayList;
 
 public class Materia {
 
+    private int materiaid;
     private String materianome;
     private String materiameta;
-    private int materiaid;
     private int formulaid;
     private int usuarioid;
 

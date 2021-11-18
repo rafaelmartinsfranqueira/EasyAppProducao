@@ -7,6 +7,13 @@ import java.util.ArrayList;
 
 public class Perfil {
 
+    private String nome;
+    private String senha;
+    private String usuario;
+    private String email;
+    private String instituicao;
+    private int usuarioid;
+
     public String getNome() {
         return nome;
     }
@@ -54,13 +61,6 @@ public class Perfil {
     public void setUsuarioid(int usuarioid) {
         this.usuarioid = usuarioid;
     }
-
-    private String nome;
-    private String senha;
-    private String usuario;
-    private String email;
-    private String instituicao;
-    private int usuarioid;
 
     public static String parseJson(Perfil perfil) {
         JSONObject jsonObject = new JSONObject();

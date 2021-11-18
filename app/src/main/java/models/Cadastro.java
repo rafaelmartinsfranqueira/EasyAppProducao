@@ -7,6 +7,15 @@ import java.util.ArrayList;
 
 public class Cadastro {
 
+    private String nome;
+    private String senha;
+    private String usuario;
+    private String email;
+    private String instituicao;
+    private String termosdeuso;
+    private String termosdeprivacidade;
+    private int usuarioid;
+
     public String getNome() {
         return nome;
     }
@@ -70,15 +79,6 @@ public class Cadastro {
     public void setUsuarioid(int usuarioid) {
         this.usuarioid = usuarioid;
     }
-
-    private String nome;
-    private String senha;
-    private String usuario;
-    private String email;
-    private String instituicao;
-    private String termosdeuso;
-    private String termosdeprivacidade;
-    private int usuarioid;
 
     public static String parseJson(Cadastro cadastro) {
         JSONObject jsonObject = new JSONObject();

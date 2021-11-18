@@ -7,6 +7,12 @@ import java.util.ArrayList;
 
 public class Nota {
 
+    private String notanome;
+    private String notavalor;
+    private int materiaid;
+    private int notaid;
+    private int usuarioid;
+
     public String getNotanome() {
         return notanome;
     }
@@ -39,11 +45,6 @@ public class Nota {
         this.notaid = notaid;
     }
 
-    private String notanome;
-    private String notavalor;
-    private int materiaid;
-    private int notaid;
-
     public int getUsuarioid() {
         return usuarioid;
     }
@@ -51,8 +52,6 @@ public class Nota {
     public void setUsuarioid(int usuarioid) {
         this.usuarioid = usuarioid;
     }
-
-    private int usuarioid;
 
     public static String parseJson(Nota nota) {
         JSONObject jsonObject = new JSONObject();
@@ -79,7 +78,7 @@ public class Nota {
                 nota.setNotavalor(obj.getString("notavalor"));
                 nota.setMateriaid(obj.getInt("materiaid"));
                 nota.setNotaid(obj.getInt("notaid"));
-                nota.setNotaid(obj.getInt("usuarioid"));
+                nota.setUsuarioid(obj.getInt("usuarioid"));
                 notas.add(nota);
             }
             return notas;
