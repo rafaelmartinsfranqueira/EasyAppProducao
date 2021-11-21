@@ -2,7 +2,6 @@ package models;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 
 public class Login {
@@ -15,8 +14,8 @@ public class Login {
         return usuario;
     }
 
-    public void setUsuario(String nome) {
-        this.usuario = nome;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getSenha() {
@@ -81,9 +80,9 @@ public class Login {
     public Login() {
     }
 
-    public Login(int usuarioid, String usuario, String senha) {
+    public Login(int usuarioid, String nome, String senha) {
         usuarioid = usuarioid;
-        usuario = usuario;
+        nome = nome;
         senha = senha;
     }
 }

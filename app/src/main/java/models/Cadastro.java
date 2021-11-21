@@ -7,88 +7,89 @@ import java.util.ArrayList;
 
 public class Cadastro {
 
-    private String nome;
-    private String senha;
-    private String usuario;
-    private String email;
-    private String instituicao;
-    private String termosdeuso;
-    private String termosdeprivacidade;
-    private int usuarioid;
-    private String usuarioimagem;
-
-
-    public String getUsuarioimagem() {
-        return usuarioimagem;
-    }
-
-    public void setUsuarioimagem(String usuarioimagem) {
-        this.usuarioimagem = usuarioimagem;
-    }
+    private String Nome;
 
     public String getNome() {
-        return nome;
+        return Nome;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        Nome = nome;
     }
 
     public String getSenha() {
-        return senha;
+        return Senha;
     }
 
     public void setSenha(String senha) {
-        this.senha = senha;
+        Senha = senha;
     }
 
     public String getUsuario() {
-        return usuario;
+        return Usuario;
     }
 
     public void setUsuario(String usuario) {
-        this.usuario = usuario;
+        Usuario = usuario;
     }
 
     public String getEmail() {
-        return email;
+        return Email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        Email = email;
     }
 
     public String getInstituicao() {
-        return instituicao;
+        return Instituicao;
     }
 
     public void setInstituicao(String instituicao) {
-        this.instituicao = instituicao;
+        Instituicao = instituicao;
     }
 
     public String getTermosdeuso() {
-        return termosdeuso;
+        return Termosdeuso;
     }
 
     public void setTermosdeuso(String termosdeuso) {
-        this.termosdeuso = termosdeuso;
+        Termosdeuso = termosdeuso;
     }
 
     public String getTermosdeprivacidade() {
-        return termosdeprivacidade;
+        return Termosdeprivacidade;
     }
 
     public void setTermosdeprivacidade(String termosdeprivacidade) {
-        this.termosdeprivacidade = termosdeprivacidade;
+        Termosdeprivacidade = termosdeprivacidade;
     }
 
     public int getUsuarioid() {
-        return usuarioid;
+        return Usuarioid;
     }
 
     public void setUsuarioid(int usuarioid) {
-        this.usuarioid = usuarioid;
+        Usuarioid = usuarioid;
     }
+
+    public String getUsuarioimagem() {
+        return Usuarioimagem;
+    }
+
+    public void setUsuarioimagem(String usuarioimagem) {
+        Usuarioimagem = usuarioimagem;
+    }
+
+    private String Senha;
+    private String Usuario;
+    private String Email;
+    private String Instituicao;
+    private String Termosdeuso;
+    private String Termosdeprivacidade;
+    private int Usuarioid;
+    private String Usuarioimagem;
+
 
     public static String parseJson(Cadastro cadastro) {
         JSONObject jsonObject = new JSONObject();
@@ -138,11 +139,11 @@ public class Cadastro {
             JSONObject obj = new JSONObject(json);
             cadastro.setNome(obj.getString("nome"));
             cadastro.setSenha(obj.getString("senha"));
-            cadastro.setSenha(obj.getString("usuario"));
-            cadastro.setSenha(obj.getString("email"));
-            cadastro.setSenha(obj.getString("instituicao"));
-            cadastro.setSenha(obj.getString("termosdeuso"));
-            cadastro.setSenha(obj.getString("termosdeprivacidade"));
+            cadastro.setUsuario(obj.getString("usuario"));
+            cadastro.setEmail(obj.getString("email"));
+            cadastro.setInstituicao(obj.getString("instituicao"));
+            cadastro.setTermosdeuso(obj.getString("termosdeuso"));
+            cadastro.setTermosdeprivacidade(obj.getString("termosdeprivacidade"));
             cadastro.setUsuarioid(obj.getInt("usuarioid"));
             cadastro.setUsuarioimagem(obj.getString("usuarioimagem"));
             return cadastro;
@@ -155,14 +156,14 @@ public class Cadastro {
     }
 
     public Cadastro(int usuarioid, String nome, String senha, String usuario, String email, String instituicao, String termosdeuso, String termosdeprivacidade, String usuarioimagem) {
-        usuarioid = usuarioid;
-        nome = nome;
-        senha = senha;
-        email = email;
-        instituicao = instituicao;
-        usuario = usuario;
-        termosdeuso = termosdeuso;
-        termosdeprivacidade = termosdeprivacidade;
-        usuarioimagem = usuarioimagem;
+        Usuarioid = usuarioid;
+        Nome = nome;
+        Senha = senha;
+        Email = email;
+        Instituicao = instituicao;
+        Usuario = usuario;
+        Termosdeuso = termosdeuso;
+        Termosdeprivacidade = termosdeprivacidade;
+        Usuarioimagem = usuarioimagem;
     }
 }
