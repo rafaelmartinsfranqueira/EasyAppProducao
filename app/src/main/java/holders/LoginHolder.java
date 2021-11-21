@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.easyapp.R;
 
 public class LoginHolder extends RecyclerView.ViewHolder {
-    public TextView txtNome;
-    public TextView txtSenha;
+    public TextView txtLoginUsuario;
+    public TextView txtLoginSenha;
 
     public LoginHolder(View view) {
         super(view);
-        txtNome = (TextView) view.findViewById(R.id.txtLoginUsuario);
-        txtSenha = (TextView) view.findViewById(R.id.txtLoginSenha);
+        txtLoginUsuario = (TextView) view.findViewById(R.id.txtLoginUsuario);
+        txtLoginSenha = (TextView) view.findViewById(R.id.txtLoginSenha);
     }
 
 }
