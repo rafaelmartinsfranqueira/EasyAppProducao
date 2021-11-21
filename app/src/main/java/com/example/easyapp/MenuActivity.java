@@ -16,7 +16,7 @@ public class MenuActivity extends AppCompatActivity {
     }
 
     public void buttonFormulaClick(View view) {
-        Intent intent = new Intent(this,FormulaActivity.class);
+        Intent intent = new Intent(this, FormulaActivity.class);
         startActivity(intent);
     }
 
@@ -29,10 +29,12 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }
+
     public void buttonMateriasClick(View view) {
         Intent intent = new Intent(this, MateriaActivity.class);
         startActivity(intent);
     }
+
     public void buttonProfileClick(View view) {
         Intent intent = new Intent(this, PerfilActivity.class);
         startActivity(intent);

@@ -1,8 +1,5 @@
 package models;
 
-import android.media.Image;
-import android.widget.ImageView;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
 

@@ -8,6 +8,18 @@ import java.util.ArrayList;
 public class Nota {
 
     private String notanome1;
+    private String notavalor1;
+    private String notanome2;
+    private String notavalor2;
+    private String notanome3;
+    private String notavalor3;
+    private String notanome4;
+    private String notavalor4;
+    private String notamedia;
+    private String notamediacalculada;
+    private int materiaid;
+    private int notaid;
+    private int usuarioid;
 
     public String getNotanome1() {
         return notanome1;
@@ -113,19 +125,6 @@ public class Nota {
         this.usuarioid = usuarioid;
     }
 
-    private String notavalor1;
-    private String notanome2;
-    private String notavalor2;
-    private String notanome3;
-    private String notavalor3;
-    private String notanome4;
-    private String notavalor4;
-    private String notamedia;
-    private String notamediacalculada;
-    private int materiaid;
-    private int notaid;
-    private int usuarioid;
-
     public static String parseJson(Nota nota) {
         JSONObject jsonObject = new JSONObject();
         try {
@@ -202,7 +201,7 @@ public class Nota {
     public Nota() {
     }
 
-    public Nota(int notaid,int usuarioid, String notanome1, String notavalor1, String notanome2, String notavalor2, String notanome3, String notavalor3, String notanome4, String notavalor4, String notamedia, String notamediacalculada, int materiaid) {
+    public Nota(int notaid, int usuarioid, String notanome1, String notavalor1, String notanome2, String notavalor2, String notanome3, String notavalor3, String notanome4, String notavalor4, String notamedia, String notamediacalculada, int materiaid) {
         notaid = notaid;
         usuarioid = usuarioid;
         notanome1 = notanome1;

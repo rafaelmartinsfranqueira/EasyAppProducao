@@ -16,7 +16,7 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     public void btnSalvarClick(View view) {
-        Intent intent = new Intent(this,MenuActivity.class);
+        Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
 }

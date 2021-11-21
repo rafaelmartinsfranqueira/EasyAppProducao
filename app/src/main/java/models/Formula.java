@@ -17,6 +17,15 @@ public class Formula {
     private String formulapesonota2;
     private String formulapesonota3;
     private String formulapesonota4;
+    private int usuarioid;
+
+    public int getUsuarioid() {
+        return usuarioid;
+    }
+
+    public void setUsuarioid(int usuarioid) {
+        this.usuarioid = usuarioid;
+    }
 
     public int getFormulaid() {
         return formulaid;
@@ -111,6 +120,7 @@ public class Formula {
             jsonObject.put("formulapesonota2", formula.getFormulapesonota2());
             jsonObject.put("formulapesonota3", formula.getFormulapesonota3());
             jsonObject.put("formulapesonota4", formula.getFormulapesonota4());
+            jsonObject.put("usuarioid", formula.getUsuarioid());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -134,6 +144,7 @@ public class Formula {
                 formula.setFormulapesonota2(obj.getString("formulapesonota2"));
                 formula.setFormulapesonota3(obj.getString("formulapesonota3"));
                 formula.setFormulapesonota4(obj.getString("formulapesonota4"));
+                formula.setUsuarioid(obj.getInt("usuarioid"));
                 formulas.add(formula);
             }
             return formulas;
@@ -156,6 +167,7 @@ public class Formula {
             formula.setFormulapesonota2(obj.getString("formulapesonota2"));
             formula.setFormulapesonota3(obj.getString("formulapesonota3"));
             formula.setFormulapesonota4(obj.getString("formulapesonota4"));
+            formula.setUsuarioid(obj.getInt("usuarioid"));
             return formula;
         } catch (Exception ex) {
             return null;
@@ -165,7 +177,7 @@ public class Formula {
     public Formula() {
     }
 
-    public Formula(int formulaid, String formulanome, String formulanomenota1, String formulanomenota2, String formulanomenota3, String formulanomenota4, String formulapesonota1, String formulapesonota2, String formulapesonota3, String formulapesonota4) {
+    public Formula(int formulaid, int usuarioid, String formulanome, String formulanomenota1, String formulanomenota2, String formulanomenota3, String formulanomenota4, String formulapesonota1, String formulapesonota2, String formulapesonota3, String formulapesonota4) {
         formulaid = formulaid;
         formulanome = formulanome;
         formulanomenota1 = formulanomenota1;
@@ -176,5 +188,6 @@ public class Formula {
         formulapesonota2 = formulapesonota2;
         formulapesonota3 = formulapesonota3;
         formulapesonota4 = formulapesonota4;
+        usuarioid = usuarioid;
     }
 }

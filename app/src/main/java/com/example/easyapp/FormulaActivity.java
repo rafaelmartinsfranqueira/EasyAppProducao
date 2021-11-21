@@ -13,5 +13,5 @@ public class FormulaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formula);
         getSupportActionBar().setHomeButtonEnabled(true);
-        }
     }
+}

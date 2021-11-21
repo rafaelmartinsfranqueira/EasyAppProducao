@@ -110,6 +110,6 @@ public class Materia {
         materianome = materianome;
         materiameta = materiameta;
         formulaid = formulaid;
-        usuarioid =usuarioid;
+        usuarioid = usuarioid;
     }
 }

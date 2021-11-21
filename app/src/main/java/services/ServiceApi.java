@@ -44,9 +44,7 @@ public class ServiceApi {
                 Log.e("Service Api", "Exception: " + e.getMessage());
             }
             return response;
-        }
-
-        else if (method == "POST") {
+        } else if (method == "POST") {
             try {
                 URL url = new URL(reqUrl);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -65,9 +63,7 @@ public class ServiceApi {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
-
-        else if (method == "PUT") {
+        } else if (method == "PUT") {
             try {
                 URL url = new URL(reqUrl);
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -90,7 +86,6 @@ public class ServiceApi {
 
         return "";
     }
-
 
 
     private static String convertStreamToString(InputStream is) {

@@ -154,7 +154,7 @@ public class Cadastro {
     public Cadastro() {
     }
 
-    public Cadastro(int usuarioid, String nome, String senha,String usuario,String email, String instituicao, String termosdeuso,String termosdeprivacidade,String usuarioimagem) {
+    public Cadastro(int usuarioid, String nome, String senha, String usuario, String email, String instituicao, String termosdeuso, String termosdeprivacidade, String usuarioimagem) {
         usuarioid = usuarioid;
         nome = nome;
         senha = senha;

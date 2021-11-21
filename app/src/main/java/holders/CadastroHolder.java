@@ -1,6 +1,5 @@
 package holders;
 
-import android.media.Image;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
