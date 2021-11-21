@@ -1,5 +1,8 @@
 package models;
 
+import android.media.Image;
+import android.widget.ImageView;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -13,6 +16,7 @@ public class Perfil {
     private String email;
     private String instituicao;
     private int usuarioid;
+    private String usuarioimagem;
 
     public String getNome() {
         return nome;
@@ -62,6 +66,14 @@ public class Perfil {
         this.usuarioid = usuarioid;
     }
 
+    public String getUsuarioimagem() {
+        return usuarioimagem;
+    }
+
+    public void setUsuarioimagem(String usuarioimagem) {
+        this.usuarioimagem = usuarioimagem;
+    }
+
     public static String parseJson(Perfil perfil) {
         JSONObject jsonObject = new JSONObject();
         try {
@@ -71,6 +83,7 @@ public class Perfil {
             jsonObject.put("usuario", perfil.getUsuario());
             jsonObject.put("email", perfil.getEmail());
             jsonObject.put("instituicao", perfil.getInstituicao());
+            jsonObject.put("usuarioimagem", perfil.getUsuarioimagem());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -90,6 +103,7 @@ public class Perfil {
                 perfil.setEmail(obj.getString("email"));
                 perfil.setInstituicao(obj.getString("instituicao"));
                 perfil.setUsuarioid(obj.getInt("usuarioid"));
+                perfil.setUsuarioimagem(obj.getString("usuarioimagem"));
                 perfis.add(perfil);
             }
             return perfis;
@@ -108,6 +122,7 @@ public class Perfil {
             perfil.setSenha(obj.getString("email"));
             perfil.setSenha(obj.getString("instituicao"));
             perfil.setUsuarioid(obj.getInt("usuarioid"));
+            perfil.setUsuarioimagem(obj.getString("usuarioimagem"));
             return perfil;
         } catch (Exception ex) {
             return null;
@@ -117,12 +132,13 @@ public class Perfil {
     public Perfil() {
     }
 
-    public Perfil(int usuarioid, String nome, String senha, String usuario, String email, String instituicao) {
+    public Perfil(int usuarioid, String nome, String senha, String usuario, String email, String instituicao, String usuarioimagem) {
         usuarioid = usuarioid;
         nome = nome;
         senha = senha;
         email = email;
         instituicao = instituicao;
         usuario = usuario;
+        usuarioimagem = usuarioimagem;
     }
 }

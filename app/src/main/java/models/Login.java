@@ -6,16 +6,16 @@ import java.util.ArrayList;
 
 public class Login {
 
-    private String nome;
+    private String usuario;
     private String senha;
     private int usuarioid;
 
-    public String getNome() {
-        return nome;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setUsuario(String nome) {
+        this.usuario = nome;
     }
 
     public String getSenha() {
@@ -37,7 +37,7 @@ public class Login {
     public static String parseJson(Login login) {
         JSONObject jsonObject = new JSONObject();
         try {
-            jsonObject.put("nome", login.getNome());
+            jsonObject.put("usuario", login.getUsuario());
             jsonObject.put("senha", login.getSenha());
             jsonObject.put("usuarioid", login.getUsuarioid());
             return jsonObject.toString();
@@ -53,7 +53,7 @@ public class Login {
             for (int i = 0; i < array.length(); i++) {
                 Login login = new Login();
                 JSONObject obj = array.getJSONObject(i);
-                login.setNome(obj.getString("nome"));
+                login.setUsuario(obj.getString("usuario"));
                 login.setSenha(obj.getString("senha"));
                 login.setUsuarioid(obj.getInt("usuarioid"));
                 logins.add(login);
@@ -68,7 +68,7 @@ public class Login {
         try {
             Login login = new Login();
             JSONObject obj = new JSONObject(json);
-            login.setNome(obj.getString("nome"));
+            login.setUsuario(obj.getString("usuario"));
             login.setSenha(obj.getString("senha"));
             login.setUsuarioid(obj.getInt("id"));
             return login;
@@ -80,9 +80,9 @@ public class Login {
     public Login() {
     }
 
-    public Login(int usuarioid, String nome, String senha) {
+    public Login(int usuarioid, String usuario, String senha) {
         usuarioid = usuarioid;
-        nome = nome;
+        usuario = usuario;
         senha = senha;
     }
 }

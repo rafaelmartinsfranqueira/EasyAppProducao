@@ -13,7 +13,7 @@ public class LoginHolder extends RecyclerView.ViewHolder {
 
     public LoginHolder(View view) {
         super(view);
-        txtNome = (TextView) view.findViewById(R.id.txtLoginNome);
+        txtNome = (TextView) view.findViewById(R.id.txtLoginUsuario);
         txtSenha = (TextView) view.findViewById(R.id.txtLoginSenha);
     }
 

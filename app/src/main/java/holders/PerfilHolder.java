@@ -1,6 +1,7 @@
 package holders;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,6 +14,7 @@ public class PerfilHolder extends RecyclerView.ViewHolder {
     public TextView txtUsuario;
     public TextView txtEmail;
     public TextView txtInstituicao;
+    public ImageView imgCadastroUsuario;
 
     public PerfilHolder(View view) {
         super(view);
@@ -21,6 +23,7 @@ public class PerfilHolder extends RecyclerView.ViewHolder {
         txtUsuario = (TextView) view.findViewById(R.id.txtPerfilUsuario);
         txtEmail = (TextView) view.findViewById(R.id.txtPerfilEmail);
         txtInstituicao = (TextView) view.findViewById(R.id.txtPerfilInstituicao);
+        imgCadastroUsuario = (ImageView) view.findViewById(R.id.imgCadastroUsuario);
     }
 
 }

@@ -15,6 +15,16 @@ public class Cadastro {
     private String termosdeuso;
     private String termosdeprivacidade;
     private int usuarioid;
+    private String usuarioimagem;
+
+
+    public String getUsuarioimagem() {
+        return usuarioimagem;
+    }
+
+    public void setUsuarioimagem(String usuarioimagem) {
+        this.usuarioimagem = usuarioimagem;
+    }
 
     public String getNome() {
         return nome;
@@ -91,6 +101,7 @@ public class Cadastro {
             jsonObject.put("instituicao", cadastro.getInstituicao());
             jsonObject.put("termosdeuso", cadastro.getTermosdeuso());
             jsonObject.put("termosdeprivacidade", cadastro.getTermosdeprivacidade());
+            jsonObject.put("usuarioimagem", cadastro.getUsuarioimagem());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -112,6 +123,7 @@ public class Cadastro {
                 cadastro.setTermosdeuso(obj.getString("termosdeuso"));
                 cadastro.setTermosdeprivacidade(obj.getString("termosdeprivacidade"));
                 cadastro.setUsuarioid(obj.getInt("usuarioid"));
+                cadastro.setUsuarioimagem(obj.getString("usuarioimagem"));
                 cadastros.add(cadastro);
             }
             return cadastros;
@@ -132,6 +144,7 @@ public class Cadastro {
             cadastro.setSenha(obj.getString("termosdeuso"));
             cadastro.setSenha(obj.getString("termosdeprivacidade"));
             cadastro.setUsuarioid(obj.getInt("usuarioid"));
+            cadastro.setUsuarioimagem(obj.getString("usuarioimagem"));
             return cadastro;
         } catch (Exception ex) {
             return null;
@@ -141,7 +154,7 @@ public class Cadastro {
     public Cadastro() {
     }
 
-    public Cadastro(int usuarioid, String nome, String senha,String usuario,String email, String instituicao, String termosdeuso,String termosdeprivacidade) {
+    public Cadastro(int usuarioid, String nome, String senha,String usuario,String email, String instituicao, String termosdeuso,String termosdeprivacidade,String usuarioimagem) {
         usuarioid = usuarioid;
         nome = nome;
         senha = senha;
@@ -150,5 +163,6 @@ public class Cadastro {
         usuario = usuario;
         termosdeuso = termosdeuso;
         termosdeprivacidade = termosdeprivacidade;
+        usuarioimagem = usuarioimagem;
     }
 }

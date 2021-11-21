@@ -1,6 +1,8 @@
 package holders;
 
+import android.media.Image;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +17,7 @@ public class CadastroHolder extends RecyclerView.ViewHolder {
     public TextView txtInstituicao;
     public TextView txttermoDeUso;
     public TextView txttermoDePrivacidade;
+    public ImageView imgCadastroUsuario;
 
     public CadastroHolder(View view) {
         super(view);
@@ -25,6 +28,8 @@ public class CadastroHolder extends RecyclerView.ViewHolder {
         txtInstituicao = (TextView) view.findViewById(R.id.txtCadastroInstituicao);
         txttermoDeUso = (TextView) view.findViewById(R.id.txtCadastroTermosDeUso);
         txttermoDePrivacidade = (TextView) view.findViewById(R.id.txtCadastroTermosDePrivacidade);
+        txttermoDePrivacidade = (TextView) view.findViewById(R.id.txtCadastroTermosDePrivacidade);
+        imgCadastroUsuario = (ImageView) view.findViewById(R.id.imgCadastroUsuario);
     }
 
 }
