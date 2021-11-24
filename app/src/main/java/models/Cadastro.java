@@ -7,6 +7,13 @@ import java.util.ArrayList;
 
 public class Cadastro {
 
+    private String Senha;
+    private String Usuario;
+    private String Email;
+    private String Instituicao;
+    private boolean TermosdeUso;
+    private boolean TermosdePrivacidade;
+    private int Usuarioid;
     private String Nome;
 
     public String getNome() {
@@ -49,22 +56,6 @@ public class Cadastro {
         Instituicao = instituicao;
     }
 
-    public String getTermosdeuso() {
-        return Termosdeuso;
-    }
-
-    public void setTermosdeuso(String termosdeuso) {
-        Termosdeuso = termosdeuso;
-    }
-
-    public String getTermosdeprivacidade() {
-        return Termosdeprivacidade;
-    }
-
-    public void setTermosdeprivacidade(String termosdeprivacidade) {
-        Termosdeprivacidade = termosdeprivacidade;
-    }
-
     public int getUsuarioid() {
         return Usuarioid;
     }
@@ -73,22 +64,22 @@ public class Cadastro {
         Usuarioid = usuarioid;
     }
 
-    public String getUsuarioimagem() {
-        return Usuarioimagem;
+
+    public boolean getTermosdeUso() {
+        return TermosdeUso;
     }
 
-    public void setUsuarioimagem(String usuarioimagem) {
-        Usuarioimagem = usuarioimagem;
+    public void setTermosdeUso(boolean termosdeUso) {
+        TermosdeUso = termosdeUso;
     }
 
-    private String Senha;
-    private String Usuario;
-    private String Email;
-    private String Instituicao;
-    private String Termosdeuso;
-    private String Termosdeprivacidade;
-    private int Usuarioid;
-    private String Usuarioimagem;
+    public boolean getTermosdePrivacidade() {
+        return TermosdePrivacidade;
+    }
+
+    public void setTermosdePrivacidade(boolean termosdePrivacidade) {
+        TermosdePrivacidade = termosdePrivacidade;
+    }
 
 
     public static String parseJson(Cadastro cadastro) {
@@ -100,9 +91,8 @@ public class Cadastro {
             jsonObject.put("usuario", cadastro.getUsuario());
             jsonObject.put("email", cadastro.getEmail());
             jsonObject.put("instituicao", cadastro.getInstituicao());
-            jsonObject.put("termosdeuso", cadastro.getTermosdeuso());
-            jsonObject.put("termosdeprivacidade", cadastro.getTermosdeprivacidade());
-            jsonObject.put("usuarioimagem", cadastro.getUsuarioimagem());
+            jsonObject.put("termosdeuso", cadastro.getTermosdeUso());
+            jsonObject.put("termosdeprivacidade", cadastro.getTermosdePrivacidade());
             return jsonObject.toString();
         } catch (Exception ex) {
             return "";
@@ -121,10 +111,9 @@ public class Cadastro {
                 cadastro.setUsuario(obj.getString("usuario"));
                 cadastro.setEmail(obj.getString("email"));
                 cadastro.setInstituicao(obj.getString("instituicao"));
-                cadastro.setTermosdeuso(obj.getString("termosdeuso"));
-                cadastro.setTermosdeprivacidade(obj.getString("termosdeprivacidade"));
+                cadastro.setTermosdeUso(obj.getBoolean("termosdeuso"));
+                cadastro.setTermosdePrivacidade(obj.getBoolean("termosdeprivacidade"));
                 cadastro.setUsuarioid(obj.getInt("usuarioid"));
-                cadastro.setUsuarioimagem(obj.getString("usuarioimagem"));
                 cadastros.add(cadastro);
             }
             return cadastros;
@@ -142,10 +131,9 @@ public class Cadastro {
             cadastro.setUsuario(obj.getString("usuario"));
             cadastro.setEmail(obj.getString("email"));
             cadastro.setInstituicao(obj.getString("instituicao"));
-            cadastro.setTermosdeuso(obj.getString("termosdeuso"));
-            cadastro.setTermosdeprivacidade(obj.getString("termosdeprivacidade"));
+            cadastro.setTermosdeUso(obj.getBoolean("termosdeuso"));
+            cadastro.setTermosdePrivacidade(obj.getBoolean("termosdeprivacidade"));
             cadastro.setUsuarioid(obj.getInt("usuarioid"));
-            cadastro.setUsuarioimagem(obj.getString("usuarioimagem"));
             return cadastro;
         } catch (Exception ex) {
             return null;
@@ -155,15 +143,14 @@ public class Cadastro {
     public Cadastro() {
     }
 
-    public Cadastro(int usuarioid, String nome, String senha, String usuario, String email, String instituicao, String termosdeuso, String termosdeprivacidade, String usuarioimagem) {
+    public Cadastro(int usuarioid, String nome, String senha, String usuario, String email, String instituicao,boolean termosdeuso,boolean termosdeprivacidade) {
         Usuarioid = usuarioid;
         Nome = nome;
         Senha = senha;
         Email = email;
         Instituicao = instituicao;
+        TermosdeUso = termosdeuso;
+        TermosdePrivacidade = termosdeprivacidade;
         Usuario = usuario;
-        Termosdeuso = termosdeuso;
-        Termosdeprivacidade = termosdeprivacidade;
-        Usuarioimagem = usuarioimagem;
     }
 }

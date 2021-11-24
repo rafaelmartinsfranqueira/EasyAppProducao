@@ -37,8 +37,6 @@ public class CadastroAdapter extends RecyclerView.Adapter<CadastroHolder> {
         holder.txtNome.setText(cadastros.get(position).getNome());
         holder.txtSenha.setText(cadastros.get(position).getSenha());
         holder.txtUsuario.setText(cadastros.get(position).getUsuario());
-        holder.txttermoDePrivacidade.setText(cadastros.get(position).getTermosdeprivacidade());
-        holder.txttermoDeUso.setText(cadastros.get(position).getTermosdeuso());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

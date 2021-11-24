@@ -8,7 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import models.Cadastro;
@@ -18,14 +18,13 @@ public class CadastroActivity extends AppCompatActivity {
 
     int usuarioid = 0;
     Cadastro cadastro;
-    public EditText txtNome;
-    public EditText txtSenha;
-    public EditText txtUsuario;
-    public EditText txtEmail;
-    public EditText txtInstituicao;
-    public TextView txttermoDeUso;
-    public TextView txttermoDePrivacidade;
-    //public TextView imgCadastroUsuario;
+    public EditText txtCadastroNome;
+    public EditText txtCadastroSenha;
+    public EditText txtCadastroUsuario;
+    public EditText txtCadastroEmail;
+    public EditText txtCadastroInstituicao;
+    public Switch switchCadastroTermoDeUso;
+    public Switch switchCadastroTermoDePrivacidade;
     ProgressDialog dialog;
 
     @Override
@@ -33,37 +32,36 @@ public class CadastroActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
         getSupportActionBar().setHomeButtonEnabled(true);
-        txtNome = findViewById(R.id.txtCadastroNome);
-        txtSenha = findViewById(R.id.txtCadastroSenha);
-        txtUsuario = findViewById(R.id.txtCadastroUsuario);
-        txtEmail = findViewById(R.id.txtCadastroEmail);
-        txtInstituicao = findViewById(R.id.txtCadastroInstituicao);
-        txttermoDeUso = findViewById(R.id.txtCadastroTermosDeUso);
-        txttermoDePrivacidade = findViewById(R.id.txtCadastroTermosDePrivacidade);
-        //imgCadastroUsuario = findViewById(R.id.imgCadastroUsuario);
-    }
-
-    public void carregarCampos() {
-        txtNome.setText(cadastro.getNome());
-        txtSenha.setText(cadastro.getEmail());
-        txtUsuario.setText(cadastro.getUsuario());
-        txtEmail.setText(cadastro.getEmail());
-        txtInstituicao.setText(cadastro.getInstituicao());
-        txttermoDeUso.setText(cadastro.getTermosdeuso());
-        txttermoDePrivacidade.setText(cadastro.getTermosdeprivacidade());
-        //imgCadastroUsuario.setText(cadastro.getUsuarioimagem());
-    }
+        txtCadastroNome = (EditText) findViewById(R.id.txtCadastroNome);
+        txtCadastroSenha = (EditText) findViewById(R.id.txtCadastroSenha);
+        txtCadastroUsuario = (EditText) findViewById(R.id.txtCadastroUsuario);
+        txtCadastroEmail = (EditText) findViewById(R.id.txtCadastroEmail);
+        txtCadastroInstituicao = (EditText) findViewById(R.id.txtCadastroInstituicao);
+        switchCadastroTermoDeUso = (Switch) findViewById(R.id.switchCadastroTermoDeUso);
+        switchCadastroTermoDePrivacidade = (Switch) findViewById(R.id.switchCadastroTermoDePrivacidade);
+     }
 
     public void btnSalvarCadastroClick(View v) {
-        cadastro = new Cadastro();
-        txtNome.setText(cadastro.getNome());
-        txtSenha.setText(cadastro.getEmail());
-        txtUsuario.setText(cadastro.getUsuario());
-        txtEmail.setText(cadastro.getEmail());
-        txtInstituicao.setText(cadastro.getInstituicao());
-        txttermoDeUso.setText(cadastro.getTermosdeuso());
-        txttermoDePrivacidade.setText(cadastro.getTermosdeprivacidade());
-        //imgCadastroUsuario.setText(cadastro.getUsuarioimagem());
+        boolean TermosDeUso, TermosDePrivacidade;
+        String Nome = txtCadastroNome.getText().toString();
+        String Senha = txtCadastroSenha.getText().toString();
+        String Usuario = txtCadastroUsuario.getText().toString();
+        String Email = txtCadastroEmail.getText().toString();
+        String Instituicao = txtCadastroInstituicao.getText().toString();
+
+        if (switchCadastroTermoDeUso.isChecked()) {
+            TermosDeUso = true;
+        } else {
+            TermosDeUso = false;
+        }
+
+        if (switchCadastroTermoDePrivacidade.isChecked()) {
+            TermosDePrivacidade = true;
+        } else {
+            TermosDePrivacidade = false;
+        }
+
+        cadastro = new Cadastro(10,Nome, Senha, Usuario, Email, Instituicao,TermosDeUso,TermosDePrivacidade);
         cadastro.setUsuarioid(0);
         new CadastroAPI("POST").execute("usuarios/criar", Cadastro.parseJson(cadastro));
         Intent intent = new Intent(this, MenuActivity.class);
@@ -80,7 +78,6 @@ public class CadastroActivity extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            carregarCampos();
             dialog = ProgressDialog.show(CadastroActivity.this, "Aguarde", "Por Favor Aguarde...");
         }
 
@@ -95,7 +92,6 @@ public class CadastroActivity extends AppCompatActivity {
             super.onPostExecute(s);
             if (metodo == "GET") {
                 cadastro = Cadastro.parseOneObject(s);
-                carregarCampos();
                 dialog.dismiss();
             }
             if (s == "OK") {
