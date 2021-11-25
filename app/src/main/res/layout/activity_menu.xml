@@ -49,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imgMenuUsuario" />
 
     <Button
-        android:id="@+id/btnMenuDesempenho"
+        android:id="@+id/btnMenuDashboard"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -57,7 +57,7 @@
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/teal_200"
         android:onClick="buttonDashboardClick"
-        android:text="Desempenho"
+        android:text="Dashboard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMenuNotas" />
@@ -74,7 +74,7 @@
         android:text="Perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenuDesempenho" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMenuDashboard" />
 
     <ImageView
         android:id="@+id/imgMenuUsuario"
