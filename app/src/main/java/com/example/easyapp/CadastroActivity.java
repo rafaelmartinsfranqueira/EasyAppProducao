@@ -16,7 +16,7 @@ import services.ServiceApi;
 
 public class CadastroActivity extends AppCompatActivity {
 
-    int usuarioid = 0;
+    int usuarioid;
     Cadastro cadastro;
     public EditText txtCadastroNome;
     public EditText txtCadastroSenha;
@@ -61,8 +61,8 @@ public class CadastroActivity extends AppCompatActivity {
             TermosDePrivacidade = false;
         }
 
-        cadastro = new Cadastro(10,Nome, Senha, Usuario, Email, Instituicao,TermosDeUso,TermosDePrivacidade);
-        cadastro.setUsuarioid(0);
+        cadastro = new Cadastro(0,Nome, Senha, Usuario, Email, Instituicao,TermosDeUso,TermosDePrivacidade);
+        //cadastro.setUsuarioid(0);
         new CadastroAPI("POST").execute("usuarios/criar", Cadastro.parseJson(cadastro));
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);

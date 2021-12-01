@@ -34,20 +34,20 @@ public class PerfilActivity extends AppCompatActivity {
         txtPerfilUsuario = (EditText) findViewById(R.id.txtPerfilUsuario);
         txtPerfilEmail = (EditText) findViewById(R.id.txtPerfilEmail);
         txtPerfilInstituicao = (EditText) findViewById(R.id.txtPerfilInstituicao);
-        //buscarPerfis(1);//Fixo para teste
+        buscarPerfis(1);//Fixo para teste
     }
 
     public void btnEditarPerfilClick(View v) {
-        //String Nome = txtPerfilNome.getText().toString();
-        //String Senha = txtPerfilSenha.getText().toString();
-        //String Usuario = txtPerfilUsuario.getText().toString();
-        //String Email = txtPerfilEmail.getText().toString();
-        //String Instituicao = txtPerfilInstituicao.getText().toString();
-        //perfil = new Perfil(10,Nome, Senha, Usuario, Email, Instituicao);
-        //perfil.setUsuarioid(1);//Fixo para teste
-        //new PerfilAPI("PUT").execute("usuarios/update", Perfil.parseJson(perfil));
-        Toast.makeText(PerfilActivity.this, "Operacao realizada com sucesso", Toast.LENGTH_SHORT).show();
-        dialog.dismiss();
+        String Nome = txtPerfilNome.getText().toString();
+        String Senha = txtPerfilSenha.getText().toString();
+        String Usuario = txtPerfilUsuario.getText().toString();
+        String Email = txtPerfilEmail.getText().toString();
+        String Instituicao = txtPerfilInstituicao.getText().toString();
+        perfil = new Perfil(10,Nome, Senha, Usuario, Email, Instituicao);
+        perfil.setUsuarioid(1);//Fixo para teste
+        new PerfilAPI("PUT").execute("usuarios/update", Perfil.parseJson(perfil));
+
+        //dialog.dismiss();
     }
 
         public void buscarPerfis(int usuarioid) {
@@ -94,6 +94,7 @@ public class PerfilActivity extends AppCompatActivity {
                 //perfil = Perfil.parseOneObject(s);
                 //carregarCampos();
                 dialog.dismiss();
+                Toast.makeText(PerfilActivity.this, "Operacao realizada com sucesso", Toast.LENGTH_SHORT).show();
             }
             if (s == "OK") {
                 Toast.makeText(PerfilActivity.this, "Operacao realizada com sucesso", Toast.LENGTH_SHORT).show();

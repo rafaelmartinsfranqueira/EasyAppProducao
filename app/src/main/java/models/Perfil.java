@@ -118,11 +118,11 @@ public class Perfil {
     }
 
     public Perfil(int usuarioid, String nome, String senha, String usuario, String email, String instituicao) {
-        usuarioid = usuarioid;
-        nome = nome;
-        senha = senha;
-        email = email;
-        instituicao = instituicao;
-        usuario = usuario;
+        this.usuarioid = usuarioid;
+        this.nome = nome;
+        this.senha = senha;
+        this.email = email;
+        this.instituicao = instituicao;
+        this.usuario = usuario;
     }
 }

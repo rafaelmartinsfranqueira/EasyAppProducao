@@ -178,16 +178,16 @@ public class Formula {
     }
 
     public Formula(int formulaid, int usuarioid, String formulanome, String formulanomenota1, String formulanomenota2, String formulanomenota3, String formulanomenota4, String formulapesonota1, String formulapesonota2, String formulapesonota3, String formulapesonota4) {
-        formulaid = formulaid;
-        formulanome = formulanome;
-        formulanomenota1 = formulanomenota1;
-        formulanomenota2 = formulanomenota2;
-        formulanomenota3 = formulanomenota3;
-        formulanomenota4 = formulanomenota4;
-        formulapesonota1 = formulapesonota1;
-        formulapesonota2 = formulapesonota2;
-        formulapesonota3 = formulapesonota3;
-        formulapesonota4 = formulapesonota4;
-        usuarioid = usuarioid;
+        this.formulaid = formulaid;
+        this.formulanome = formulanome;
+        this.formulanomenota1 = formulanomenota1;
+        this.formulanomenota2 = formulanomenota2;
+        this.formulanomenota3 = formulanomenota3;
+        this.formulanomenota4 = formulanomenota4;
+        this.formulapesonota1 = formulapesonota1;
+        this.formulapesonota2 = formulapesonota2;
+        this.formulapesonota3 = formulapesonota3;
+        this.formulapesonota4 = formulapesonota4;
+        this.usuarioid = usuarioid;
     }
 }

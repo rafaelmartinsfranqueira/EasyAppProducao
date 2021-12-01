@@ -27,7 +27,7 @@ public class CadastroAdapter extends RecyclerView.Adapter<CadastroHolder> {
     @NonNull
     @Override
     public CadastroHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new CadastroHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista_cadastro, parent, false));
+        return new CadastroHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_lista_formulas, parent, false));
     }
 
     @Override
