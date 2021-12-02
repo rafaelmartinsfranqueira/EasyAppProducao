@@ -20,7 +20,7 @@
         tools:srcCompat="@drawable/materias" />
 
     <EditText
-        android:id="@+id/txtMateriaMateria"
+        android:id="@+id/txtMateriaNome"
         android:layout_width="0dp"
         android:layout_height="44dp"
         android:layout_marginStart="10dp"
@@ -58,6 +58,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:backgroundTint="@color/teal_200"
+        android:onClick="btnSalvarMateriaClick"
         android:text="Salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -78,6 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMateriaMateria" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMateriaNome" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

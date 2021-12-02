@@ -190,4 +190,9 @@ public class Formula {
         this.formulapesonota4 = formulapesonota4;
         this.usuarioid = usuarioid;
     }
+
+    @Override
+    public String toString() {
+        return formulanome ;
+    }
 }

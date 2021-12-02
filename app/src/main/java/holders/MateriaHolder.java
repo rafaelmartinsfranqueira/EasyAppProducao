@@ -15,7 +15,7 @@ public class MateriaHolder extends RecyclerView.ViewHolder {
 
     public MateriaHolder(View view) {
         super(view);
-        txtMateria = (TextView) view.findViewById(R.id.txtMateriaMateria);
+        txtMateria = (TextView) view.findViewById(R.id.txtMateriaNome);
         spinnerMateriaFormula = (Spinner) view.findViewById(R.id.spinnerMateriaFormula);
         txtMateriaMeta = (TextView) view.findViewById(R.id.txtMateriaMeta);
 

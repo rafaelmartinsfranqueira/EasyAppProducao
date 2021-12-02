@@ -106,10 +106,10 @@ public class Materia {
     }
 
     public Materia(int materiaid, String materianome, String materiameta, int formulaid, int usuarioid) {
-        materiaid = materiaid;
-        materianome = materianome;
-        materiameta = materiameta;
-        formulaid = formulaid;
-        usuarioid = usuarioid;
+        this.materiaid = materiaid;
+        this.materianome = materianome;
+        this.materiameta = materiameta;
+        this.formulaid = formulaid;
+        this.usuarioid = usuarioid;
     }
 }

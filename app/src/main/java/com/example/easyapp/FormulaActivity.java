@@ -61,6 +61,7 @@ public class FormulaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
+
     public class FormulaAPI extends AsyncTask<String, String, String> {
         private String metodo;
 
