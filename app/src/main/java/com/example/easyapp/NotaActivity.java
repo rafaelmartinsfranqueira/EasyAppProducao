@@ -73,6 +73,21 @@ public class NotaActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void btnSalvarMediaClick(View v) {
+        Double numero1;
+        Double numero2;
+        Double numero3;
+        Double numero4;
+        Double resultado;
+
+        numero1 = Double.parseDouble(txtNotasNumNota1.getText().toString());
+        numero2 = Double.parseDouble(txtNotasNumNota2.getText().toString());
+        numero3 = Double.parseDouble(txtNotasNumNota3.getText().toString());
+        numero4 = Double.parseDouble(txtNotasNumNota4.getText().toString());
+        resultado = (numero1 + numero2 + numero3 + numero4) / 4;
+        txtNotasMediaCalculada.setText(resultado.toString());
+    }
+
     public class NotaAPI extends AsyncTask<String, String, String> {
         private String metodo;
 
