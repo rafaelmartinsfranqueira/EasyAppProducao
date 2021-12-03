@@ -45,11 +45,12 @@ public class MateriaActivity extends AppCompatActivity {
     public void btnSalvarMateriaClick(View v) {
         String materianome = txtMateriaNome.getText().toString();
         String materiameta = txtMateriaMeta.getText().toString();
-        materia = new Materia(0, materianome, materiameta, 1, 1);
+        materia= new Materia(0, materianome, materiameta, 1, 1);
         new MateriaActivity.MateriaAPI("POST").execute("materias/criar", Materia.parseJson(materia));
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
     }
+
 
     public class MateriaAPI extends AsyncTask<String, String, String> {
         private String metodo;
@@ -111,8 +112,6 @@ public class MateriaActivity extends AppCompatActivity {
                 formulaArray = Formula.parseObject(s);
                 Spinner spinner = (Spinner) findViewById(R.id.spinnerMateriaFormula);
                 spinner.setAdapter(new ArrayAdapter<Formula>(MateriaActivity.this, R.layout.support_simple_spinner_dropdown_item, formulaArray));
-
-
                 dialog.dismiss();
             }
             if (s == "OK") {

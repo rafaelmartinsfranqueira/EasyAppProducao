@@ -190,18 +190,18 @@ public class Dashboard {
     }
 
     public Dashboard(String dashboardmateria1, String dashboardmateria2, String dashboardmateria3, String dashboardmateria4, String dashboardmedia1, String dashboardmedia2, String dashboardmedia3, String dashboardmedia4, String dashboardmeta1, String dashboardmeta2, String dashboardmeta3, String dashboardmeta4) {
-        dashboardmateria1 = dashboardmateria1;
-        dashboardmateria2 = dashboardmateria2;
-        dashboardmateria3 = dashboardmateria3;
-        dashboardmateria4 = dashboardmateria4;
-        dashboardmedia1 = dashboardmedia1;
-        dashboardmedia2 = dashboardmedia2;
-        dashboardmedia3 = dashboardmedia3;
-        dashboardmedia4 = dashboardmedia4;
-        dashboardmeta1 = dashboardmeta1;
-        dashboardmeta2 = dashboardmeta2;
-        dashboardmeta3 = dashboardmeta3;
-        dashboardmeta4 = dashboardmeta4;
+        this.dashboardmateria1 = dashboardmateria1;
+        this.dashboardmateria2 = dashboardmateria2;
+        this.dashboardmateria3 = dashboardmateria3;
+        this.dashboardmateria4 = dashboardmateria4;
+        this.dashboardmedia1 = dashboardmedia1;
+        this.dashboardmedia2 = dashboardmedia2;
+        this.dashboardmedia3 = dashboardmedia3;
+        this.dashboardmedia4 = dashboardmedia4;
+        this.dashboardmeta1 = dashboardmeta1;
+        this.dashboardmeta2 = dashboardmeta2;
+        this.dashboardmeta3 = dashboardmeta3;
+        this.dashboardmeta4 = dashboardmeta4;
 
     }
 }
