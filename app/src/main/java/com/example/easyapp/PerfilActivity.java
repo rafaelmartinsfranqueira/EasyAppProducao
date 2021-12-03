@@ -15,7 +15,6 @@ import services.ServiceApi;
 
 public class PerfilActivity extends AppCompatActivity {
 
-    int usuarioid;
     Perfil perfil;
     public EditText txtPerfilNome;
     public EditText txtPerfilSenha;
@@ -43,11 +42,8 @@ public class PerfilActivity extends AppCompatActivity {
         String Usuario = txtPerfilUsuario.getText().toString();
         String Email = txtPerfilEmail.getText().toString();
         String Instituicao = txtPerfilInstituicao.getText().toString();
-        perfil = new Perfil(10,Nome, Senha, Usuario, Email, Instituicao);
-        perfil.setUsuarioid(1);//Fixo para teste
+        perfil = new Perfil(1,Nome, Senha, Usuario, Email, Instituicao);
         new PerfilAPI("PUT").execute("usuarios/update", Perfil.parseJson(perfil));
-
-        //dialog.dismiss();
     }
 
         public void buscarPerfis(int usuarioid) {
@@ -91,15 +87,12 @@ public class PerfilActivity extends AppCompatActivity {
                 dialog.dismiss();
             }
             if (metodo == "PUT") {
-                //perfil = Perfil.parseOneObject(s);
-                //carregarCampos();
                 dialog.dismiss();
                 Toast.makeText(PerfilActivity.this, "Operacao realizada com sucesso", Toast.LENGTH_SHORT).show();
             }
             if (s == "OK") {
                 Toast.makeText(PerfilActivity.this, "Operacao realizada com sucesso", Toast.LENGTH_SHORT).show();
                 dialog.dismiss();
-                //finish();
             }
         }
 

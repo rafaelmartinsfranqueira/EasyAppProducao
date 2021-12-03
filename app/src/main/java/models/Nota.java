@@ -15,7 +15,6 @@ public class Nota {
     private String notavalor3;
     private String notanome4;
     private String notavalor4;
-    private String notamedia;
     private String notamediacalculada;
     private int materiaid;
     private int notaid;
@@ -85,14 +84,6 @@ public class Nota {
         this.notavalor4 = notavalor4;
     }
 
-    public String getNotamedia() {
-        return notamedia;
-    }
-
-    public void setNotamedia(String notamedia) {
-        this.notamedia = notamedia;
-    }
-
     public String getNotamediacalculada() {
         return notamediacalculada;
     }
@@ -136,7 +127,6 @@ public class Nota {
             jsonObject.put("notavalor3", nota.getNotavalor3());
             jsonObject.put("notanome4", nota.getNotanome4());
             jsonObject.put("notavalor4", nota.getNotavalor4());
-            jsonObject.put("notamedia", nota.getNotamedia());
             jsonObject.put("notamediacalculada", nota.getNotamediacalculada());
             jsonObject.put("materiaid", nota.getMateriaid());
             jsonObject.put("notaid", nota.getNotaid());
@@ -162,7 +152,6 @@ public class Nota {
                 nota.setNotavalor3(obj.getString("notavalor3"));
                 nota.setNotanome4(obj.getString("notanome4"));
                 nota.setNotavalor4(obj.getString("notavalor4"));
-                nota.setNotamedia(obj.getString("notamedia"));
                 nota.setNotamediacalculada(obj.getString("notamediacalculada"));
                 nota.setMateriaid(obj.getInt("materiaid"));
                 nota.setNotaid(obj.getInt("notaid"));
@@ -187,7 +176,6 @@ public class Nota {
             nota.setNotavalor3(obj.getString("notavalor3"));
             nota.setNotanome4(obj.getString("notanome4"));
             nota.setNotavalor4(obj.getString("notavalor4"));
-            nota.setNotamedia(obj.getString("notamedia"));
             nota.setNotamediacalculada(obj.getString("notamediacalculada"));
             nota.setMateriaid(obj.getInt("materiaid"));
             nota.setNotaid(obj.getInt("notaid"));
@@ -201,19 +189,18 @@ public class Nota {
     public Nota() {
     }
 
-    public Nota(int notaid, int usuarioid, String notanome1, String notavalor1, String notanome2, String notavalor2, String notanome3, String notavalor3, String notanome4, String notavalor4, String notamedia, String notamediacalculada, int materiaid) {
-        notaid = notaid;
-        usuarioid = usuarioid;
-        notanome1 = notanome1;
-        notavalor1 = notavalor1;
-        notanome2 = notanome2;
-        notavalor2 = notavalor2;
-        notanome3 = notanome3;
-        notavalor3 = notavalor3;
-        notanome4 = notanome4;
-        notavalor4 = notavalor4;
-        notamedia = notamedia;
-        notamediacalculada = notamediacalculada;
-        materiaid = materiaid;
+    public Nota(int notaid, int usuarioid, String notanome1, String notavalor1, String notanome2, String notavalor2, String notanome3, String notavalor3, String notanome4, String notavalor4, String notamediacalculada, int materiaid) {
+        this.notaid = notaid;
+        this.usuarioid = usuarioid;
+        this.notanome1 = notanome1;
+        this.notavalor1 = notavalor1;
+        this.notanome2 = notanome2;
+        this.notavalor2 = notavalor2;
+        this.notanome3 = notanome3;
+        this.notavalor3 = notavalor3;
+        this.notanome4 = notanome4;
+        this.notavalor4 = notavalor4;
+        this.notamediacalculada = notamediacalculada;
+        this.materiaid = materiaid;
     }
 }

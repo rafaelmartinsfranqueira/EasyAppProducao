@@ -54,7 +54,7 @@ public class FormulaActivity extends AppCompatActivity {
         String Peso2 = formulapesonota2.getText().toString();
         String Peso3 = formulapesonota3.getText().toString();
         String Peso4 = formulapesonota4.getText().toString();
-        formula = new Formula(0, 0, Nome, NomeFormula1, NomeFormula2, NomeFormula3, NomeFormula4, Peso1, Peso2, Peso3, Peso4);
+        formula = new Formula(0, 1, Nome, NomeFormula1, NomeFormula2, NomeFormula3, NomeFormula4, Peso1, Peso2, Peso3, Peso4);
         //formula.setUsuarioid(0);
         //formula.setFormulaid(0);
         new FormulaAPI("POST").execute("formulas/criar", Formula.parseJson(formula));

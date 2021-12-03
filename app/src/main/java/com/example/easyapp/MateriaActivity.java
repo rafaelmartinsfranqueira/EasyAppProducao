@@ -45,7 +45,7 @@ public class MateriaActivity extends AppCompatActivity {
     public void btnSalvarMateriaClick(View v) {
         String materianome = txtMateriaNome.getText().toString();
         String materiameta = txtMateriaMeta.getText().toString();
-        materia = new Materia(0, materianome, materiameta, 0, 0);
+        materia = new Materia(0, materianome, materiameta, 1, 1);
         new MateriaActivity.MateriaAPI("POST").execute("materias/criar", Materia.parseJson(materia));
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);

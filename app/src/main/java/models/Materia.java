@@ -112,4 +112,10 @@ public class Materia {
         this.formulaid = formulaid;
         this.usuarioid = usuarioid;
     }
+
+    @Override
+    public String toString() {
+        return materianome ;
+    }
+
 }
