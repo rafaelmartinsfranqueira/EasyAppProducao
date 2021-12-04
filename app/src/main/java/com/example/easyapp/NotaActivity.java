@@ -95,13 +95,21 @@ public class NotaActivity extends AppCompatActivity {
         Double numero2;
         Double numero3;
         Double numero4;
+        Double peso1;
+        Double peso2;
+        Double peso3;
+        Double peso4;
         Double resultado;
 
         numero1 = Double.parseDouble(txtNotasNumNota1.getText().toString());
         numero2 = Double.parseDouble(txtNotasNumNota2.getText().toString());
         numero3 = Double.parseDouble(txtNotasNumNota3.getText().toString());
         numero4 = Double.parseDouble(txtNotasNumNota4.getText().toString());
-        resultado = (numero1 + numero2 + numero3 + numero4) / 4;
+        peso1 = Double.parseDouble(formula.getFormulapesonota1().toString());
+        peso2 = Double.parseDouble(formula.getFormulapesonota2().toString());
+        peso3 = Double.parseDouble(formula.getFormulapesonota3().toString());
+        peso4 = Double.parseDouble(formula.getFormulapesonota4().toString());
+        resultado = ((numero1 * peso1) + (numero2 * peso2) + (numero3 * peso3) + (numero4 * peso4));
         txtNotasMediaCalculada.setText(resultado.toString());
     }
 

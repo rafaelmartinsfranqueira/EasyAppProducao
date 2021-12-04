@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/drawable/Icone_background.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_cadastro.xml" value="0.3383152173913043" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/activity_dashboard.xml" value="0.3383152173913043" />
@@ -22,8 +23,12 @@
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/item_lista_login.xml" value="0.11639492753623189" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/item_lista_materia.xml" value="0.33106884057971014" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/layout/materia_item_dashboard.xml" value="0.3383152173913043" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/Icone.xml" value="0.36574074074074076" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/Icone_round.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/icone.xml" value="0.17314814814814813" />
+        <entry key="..\:/Users/rafael/AndroidStudioProjects/EasyApp/app/src/main/res/mipmap-anydpi-v26/icone_round.xml" value="0.17314814814814813" />
       </map>
     </option>
   </component>

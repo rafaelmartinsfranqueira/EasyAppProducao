@@ -13,10 +13,10 @@ public class Formula {
     private String formulanomenota2;
     private String formulanomenota3;
     private String formulanomenota4;
-    private String formulapesonota1;
-    private String formulapesonota2;
-    private String formulapesonota3;
-    private String formulapesonota4;
+    private Double formulapesonota1;
+    private Double formulapesonota2;
+    private Double formulapesonota3;
+    private Double formulapesonota4;
     private int usuarioid;
 
     public int getUsuarioid() {
@@ -75,35 +75,35 @@ public class Formula {
         this.formulanomenota4 = formulanomenota4;
     }
 
-    public String getFormulapesonota1() {
+    public Double getFormulapesonota1() {
         return formulapesonota1;
     }
 
-    public void setFormulapesonota1(String formulapesonota1) {
+    public void setFormulapesonota1(Double formulapesonota1) {
         this.formulapesonota1 = formulapesonota1;
     }
 
-    public String getFormulapesonota2() {
+    public Double getFormulapesonota2() {
         return formulapesonota2;
     }
 
-    public void setFormulapesonota2(String formulapesonota2) {
+    public void setFormulapesonota2(Double formulapesonota2) {
         this.formulapesonota2 = formulapesonota2;
     }
 
-    public String getFormulapesonota3() {
+    public Double getFormulapesonota3() {
         return formulapesonota3;
     }
 
-    public void setFormulapesonota3(String formulapesonota3) {
+    public void setFormulapesonota3(Double formulapesonota3) {
         this.formulapesonota3 = formulapesonota3;
     }
 
-    public String getFormulapesonota4() {
+    public Double getFormulapesonota4() {
         return formulapesonota4;
     }
 
-    public void setFormulapesonota4(String formulapesonota4) {
+    public void setFormulapesonota4(Double formulapesonota4) {
         this.formulapesonota4 = formulapesonota4;
     }
 
@@ -140,10 +140,10 @@ public class Formula {
                 formula.setFormulanomenota2(obj.getString("formulanomenota2"));
                 formula.setFormulanomenota3(obj.getString("formulanomenota3"));
                 formula.setFormulanomenota4(obj.getString("formulanomenota4"));
-                formula.setFormulapesonota1(obj.getString("formulapesonota1"));
-                formula.setFormulapesonota2(obj.getString("formulapesonota2"));
-                formula.setFormulapesonota3(obj.getString("formulapesonota3"));
-                formula.setFormulapesonota4(obj.getString("formulapesonota4"));
+                formula.setFormulapesonota1(obj.getDouble("formulapesonota1"));
+                formula.setFormulapesonota2(obj.getDouble("formulapesonota2"));
+                formula.setFormulapesonota3(obj.getDouble("formulapesonota3"));
+                formula.setFormulapesonota4(obj.getDouble("formulapesonota4"));
                 formula.setUsuarioid(obj.getInt("usuarioid"));
                 formulas.add(formula);
             }
@@ -163,10 +163,10 @@ public class Formula {
             formula.setFormulanomenota2(obj.getString("formulanomenota2"));
             formula.setFormulanomenota3(obj.getString("formulanomenota3"));
             formula.setFormulanomenota4(obj.getString("formulanomenota4"));
-            formula.setFormulapesonota1(obj.getString("formulapesonota1"));
-            formula.setFormulapesonota2(obj.getString("formulapesonota2"));
-            formula.setFormulapesonota3(obj.getString("formulapesonota3"));
-            formula.setFormulapesonota4(obj.getString("formulapesonota4"));
+            formula.setFormulapesonota1(obj.getDouble("formulapesonota1"));
+            formula.setFormulapesonota2(obj.getDouble("formulapesonota2"));
+            formula.setFormulapesonota3(obj.getDouble("formulapesonota3"));
+            formula.setFormulapesonota4(obj.getDouble("formulapesonota4"));
             formula.setUsuarioid(obj.getInt("usuarioid"));
             return formula;
         } catch (Exception ex) {
@@ -177,7 +177,7 @@ public class Formula {
     public Formula() {
     }
 
-    public Formula(int formulaid, int usuarioid, String formulanome, String formulanomenota1, String formulanomenota2, String formulanomenota3, String formulanomenota4, String formulapesonota1, String formulapesonota2, String formulapesonota3, String formulapesonota4) {
+    public Formula(int formulaid, int usuarioid, String formulanome, String formulanomenota1, String formulanomenota2, String formulanomenota3, String formulanomenota4, Double formulapesonota1, Double formulapesonota2, Double formulapesonota3, Double formulapesonota4) {
         this.formulaid = formulaid;
         this.formulanome = formulanome;
         this.formulanomenota1 = formulanomenota1;

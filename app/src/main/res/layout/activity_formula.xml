@@ -52,7 +52,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Peso Nota 1"
-            android:inputType="numberSigned"
+            android:inputType="numberDecimal|numberSigned"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -88,7 +88,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Peso Nota 2"
-            android:inputType="numberSigned"
+            android:inputType="numberDecimal|numberSigned"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -124,7 +124,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Peso Nota 3"
-            android:inputType="numberSigned"
+            android:inputType="numberDecimal|numberSigned"
             android:textAlignment="center" />
 
     </LinearLayout>
@@ -160,7 +160,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:hint="Peso Nota 4"
-            android:inputType="numberSigned"
+            android:inputType="numberDecimal|numberSigned"
             android:textAlignment="center" />
 
     </LinearLayout>
